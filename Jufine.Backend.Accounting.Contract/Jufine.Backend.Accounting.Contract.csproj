@@ -41,8 +41,11 @@
   <ItemGroup>
     <Compile Include="DataContracts\ConsumerDetails.cs" />
     <Compile Include="DataContracts\Generated\ConsumerDetails_gen.cs" />
+    <Compile Include="DataContracts\Generated\VideoListInfo_gen.cs" />
+    <Compile Include="DataContracts\VideoListInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceContracts\IConsumerDetailsService.cs" />
+    <Compile Include="ServiceContracts\IVideoListService.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

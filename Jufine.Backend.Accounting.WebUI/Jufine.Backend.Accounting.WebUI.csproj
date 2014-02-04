@@ -79,6 +79,7 @@
     <Content Include="ConsumerDetailsMgmt.aspx" />
     <Content Include="Global.asax" />
     <Content Include="global.css" />
+    <Content Include="VideoListMgmt.aspx" />
     <Content Include="Web.config" />
     <Content Include="Welcome.aspx" />
   </ItemGroup>
@@ -100,6 +101,13 @@
     </Compile>
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="VideoListMgmt.aspx.cs">
+      <DependentUpon>VideoListMgmt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VideoListMgmt.aspx.designer.cs">
+      <DependentUpon>VideoListMgmt.aspx</DependentUpon>
     </Compile>
     <Compile Include="Welcome.aspx.cs">
       <DependentUpon>Welcome.aspx</DependentUpon>
