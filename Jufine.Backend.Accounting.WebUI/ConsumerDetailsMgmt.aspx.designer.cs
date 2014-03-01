@@ -49,15 +49,6 @@ namespace Jufine.Backend.Accounting.WebUI {
         protected global::System.Web.UI.WebControls.Button btnDelete;
         
         /// <summary>
-        /// stxtID 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox stxtID;
-        
-        /// <summary>
         /// stxtAmount 控件。
         /// </summary>
         /// <remarks>
@@ -67,22 +58,31 @@ namespace Jufine.Backend.Accounting.WebUI {
         protected global::System.Web.UI.WebControls.TextBox stxtAmount;
         
         /// <summary>
-        /// stxtType 控件。
+        /// stxtAmountTo 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox stxtType;
+        protected global::System.Web.UI.WebControls.TextBox stxtAmountTo;
         
         /// <summary>
-        /// stxtMemoTypeID 控件。
+        /// sddlAmountDetail 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox stxtMemoTypeID;
+        protected global::System.Web.UI.WebControls.DropDownList sddlAmountDetail;
+        
+        /// <summary>
+        /// srdbAccountingType 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList srdbAccountingType;
         
         /// <summary>
         /// stxtMemo 控件。
@@ -92,15 +92,6 @@ namespace Jufine.Backend.Accounting.WebUI {
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox stxtMemo;
-        
-        /// <summary>
-        /// stxtCreateUser 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox stxtCreateUser;
         
         /// <summary>
         /// stxtCreateDate 控件。
@@ -137,6 +128,15 @@ namespace Jufine.Backend.Accounting.WebUI {
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
         protected global::AjaxControlToolkit.CalendarExtender scdeCreateDateTo;
+        
+        /// <summary>
+        /// srdbResponsiblePerson 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList srdbResponsiblePerson;
         
         /// <summary>
         /// upList 控件。
@@ -211,15 +211,6 @@ namespace Jufine.Backend.Accounting.WebUI {
         protected global::System.Web.UI.WebControls.HiddenField hdID;
         
         /// <summary>
-        /// txtID 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtID;
-        
-        /// <summary>
         /// txtAmount 控件。
         /// </summary>
         /// <remarks>
@@ -227,24 +218,6 @@ namespace Jufine.Backend.Accounting.WebUI {
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtAmount;
-        
-        /// <summary>
-        /// txtType 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtType;
-        
-        /// <summary>
-        /// txtMemoTypeID 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMemoTypeID;
         
         /// <summary>
         /// txtMemo 控件。
@@ -256,31 +229,31 @@ namespace Jufine.Backend.Accounting.WebUI {
         protected global::System.Web.UI.WebControls.TextBox txtMemo;
         
         /// <summary>
-        /// txtCreateUser 控件。
+        /// rdbAccountingType 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCreateUser;
+        protected global::System.Web.UI.WebControls.RadioButtonList rdbAccountingType;
         
         /// <summary>
-        /// txtCreateDate 控件。
+        /// ddlAmountDetail 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCreateDate;
+        protected global::System.Web.UI.WebControls.DropDownList ddlAmountDetail;
         
         /// <summary>
-        /// cdeCreateDate 控件。
+        /// rdbResponsiblePerson 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::AjaxControlToolkit.CalendarExtender cdeCreateDate;
+        protected global::System.Web.UI.WebControls.RadioButtonList rdbResponsiblePerson;
         
         /// <summary>
         /// btnPreviousItem 控件。

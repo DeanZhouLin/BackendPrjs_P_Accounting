@@ -5,7 +5,7 @@ using Com.BaseLibrary.Contract;
 namespace Jufine.Backend.Accounting.DataContracts
 {
 	[Serializable]
-	public partial class ConsumerDetails: DataContractBase
+	public partial class UVConsumerDetails: DataContractBase
 	{	
 		public decimal Amount{get;set;}
 		public Int32 Type{get;set;}
@@ -16,6 +16,9 @@ namespace Jufine.Backend.Accounting.DataContracts
         public DateTime? CreateDateTo{get;set;}
 		public Int32? ResponsiblePersonID{get;set;}
 		public Int32? Status{get;set;}
+		public string TypeText{get;set;}
+		public string MemoTypeText{get;set;}
+		public string ResponsiblePersonText{get;set;}
 		
 	}
 }

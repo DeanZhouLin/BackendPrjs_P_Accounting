@@ -145,4 +145,217 @@
 日志: 相同的绑定已出现过，因 hr = 0x80070002 而失败。
 </detail>
   </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-1-130359734698828974" machine="PC-20140110DKZC" module="UnExceptedException" logType="UnExceptedException" logTime="2014/2/4 15:47:03">
+    <title>【PC-20140110DKZC】找不到 EntityType“Jufine.Backend.Accounting.DataContracts.VideoListInfo”的映射和元数据信息。</title>
+    <detail>System.InvalidOperationException: 找不到 EntityType“Jufine.Backend.Accounting.DataContracts.VideoListInfo”的映射和元数据信息。
+   在 System.Data.Objects.ObjectContext.GetTypeUsage(Type entityCLRType)
+   在 System.Data.Objects.ObjectContext.GetEntitySetFromContainer(EntityContainer container, Type entityCLRType, String exceptionParameterName)
+   在 System.Data.Objects.ObjectContext.GetEntitySetForType(Type entityCLRType, String exceptionParameterName)
+   在 System.Data.Objects.ObjectContext.CreateObjectSet[TEntity]()
+   在 Com.BaseLibrary.Service.DataBase`2.GetSelectLinq(EF entities, QueryConditionInfo`1 queryCondition) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Service\DataBase.cs:行号 127
+   在 Com.BaseLibrary.Service.DataBase`2.Query(QueryConditionInfo`1 queryCondition) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Service\DataBase.cs:行号 91
+   在 Jufine.Backend.Accounting.Business.VideoListBL.Query(QueryConditionInfo`1 queryCondition) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Projects\Accounting\Jufine.Backend.Accounting.ServiceImplement\Business\VideoListBL.cs:行号 92</detail>
+  </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-1-130359784503109727" machine="PC-20140110DKZC" module="BackendUI" logType="Error" logTime="2014/2/4 17:10:16">
+    <title>【PC-20140110DKZC】路径中具有非法字符。</title>
+    <detail>System.ArgumentException: 路径中具有非法字符。
+   在 System.IO.Path.GetFileName(String path)
+   在 System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   在 System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   在 System.IO.StreamReader..ctor(String path, Encoding encoding)
+   在 HtmlAgilityPack.HtmlDocument.Load(String path) 位置 D:\Source\htmlagilitypack.new\Trunk\HtmlAgilityPack\HtmlDocument.PathMethods.cs:行号 75
+   在 Com.BaseLibrary.HttpCore.CLVideoListControl.GetCLVideoList() 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\HttpCore\Controls\CLVideoListControl\CLVideoListControl.cs:行号 61
+   在 Jufine.Backend.Accounting.WebUI.VideoListMgmt.Page_Load(Object sender, EventArgs e) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Projects\Accounting\Jufine.Backend.Accounting.WebUI\VideoListMgmt.aspx.cs:行号 125
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</detail>
+  </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-1-130381361882829352" machine="PC-20140110DKZC" module="UnExceptedException" logType="UnExceptedException" logTime="2014/3/1 16:31:03">
+    <title>【PC-20140110DKZC】基础提供程序在 Open 上失败。</title>
+    <detail>System.Data.EntityException: 基础提供程序在 Open 上失败。 ---&gt; System.Data.SqlClient.SqlException: 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接) ---&gt; System.ComponentModel.Win32Exception: 找不到网络路径。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean&amp; closeStoreConnectionOnFailure)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean&amp; closeStoreConnectionOnFailure)
+   在 System.Data.EntityClient.EntityConnection.Open()
+   在 System.Data.Objects.ObjectContext.EnsureConnection()
+   在 System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator()
+   在 System.Linq.Enumerable.Single[TSource](IEnumerable`1 source)
+   在 System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   在 Com.BaseLibrary.Service.DataBase`2.Query(QueryConditionInfo`1 queryCondition) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Service\DataBase.cs:行号 101
+   在 Jufine.Backend.Accounting.Business.ConsumerDetailsBL.Query(QueryConditionInfo`1 queryCondition) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Projects\Accounting\Jufine.Backend.Accounting.ServiceImplement\Business\ConsumerDetailsBL.cs:行号 92</detail>
+  </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-1-130381361882829352" machine="PC-20140110DKZC" module="UnExceptedException" logType="UnExceptedException" logTime="2014/3/1 16:39:08">
+    <title>【PC-20140110DKZC】基础提供程序在 Open 上失败。</title>
+    <detail>System.Data.EntityException: 基础提供程序在 Open 上失败。 ---&gt; System.Data.SqlClient.SqlException: 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接) ---&gt; System.ComponentModel.Win32Exception: 找不到网络路径。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean&amp; closeStoreConnectionOnFailure)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean&amp; closeStoreConnectionOnFailure)
+   在 System.Data.EntityClient.EntityConnection.Open()
+   在 System.Data.Objects.ObjectContext.EnsureConnection()
+   在 System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator()
+   在 System.Linq.Enumerable.Single[TSource](IEnumerable`1 source)
+   在 System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   在 Com.BaseLibrary.Service.DataBase`2.Query(QueryConditionInfo`1 queryCondition) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Service\DataBase.cs:行号 101
+   在 Jufine.Backend.Accounting.Business.ConsumerDetailsBL.Query(QueryConditionInfo`1 queryCondition) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Projects\Accounting\Jufine.Backend.Accounting.ServiceImplement\Business\ConsumerDetailsBL.cs:行号 92</detail>
+  </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-1-130381361882829352" machine="PC-20140110DKZC" module="UnExceptedException" logType="UnExceptedException" logTime="2014/3/1 16:47:30">
+    <title>【PC-20140110DKZC】基础提供程序在 Open 上失败。</title>
+    <detail>System.Data.EntityException: 基础提供程序在 Open 上失败。 ---&gt; System.Data.SqlClient.SqlException: 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接) ---&gt; System.ComponentModel.Win32Exception: 找不到网络路径。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean&amp; closeStoreConnectionOnFailure)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean&amp; closeStoreConnectionOnFailure)
+   在 System.Data.EntityClient.EntityConnection.Open()
+   在 System.Data.Objects.ObjectContext.EnsureConnection()
+   在 System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator()
+   在 System.Linq.Enumerable.Single[TSource](IEnumerable`1 source)
+   在 System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   在 Com.BaseLibrary.Service.DataBase`2.Query(QueryConditionInfo`1 queryCondition) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Service\DataBase.cs:行号 101
+   在 Jufine.Backend.Accounting.Business.ConsumerDetailsBL.Query(QueryConditionInfo`1 queryCondition) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Projects\Accounting\Jufine.Backend.Accounting.ServiceImplement\Business\ConsumerDetailsBL.cs:行号 92</detail>
+  </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-15-130381425690448939" machine="PC-20140110DKZC" module="UnExceptedException" logType="UnExceptedException" logTime="2014/3/1 18:16:11">
+    <title>【PC-20140110DKZC】“UVConsumerDetails”的“ResponsiblePersonID”属性不能设置为“null”值。必须将该属性设置为类型为“Int32”的非 null 值。</title>
+    <detail>System.Data.ConstraintException: “UVConsumerDetails”的“ResponsiblePersonID”属性不能设置为“null”值。必须将该属性设置为类型为“Int32”的非 null 值。
+   在 System.Data.Common.Internal.Materialization.Shaper.ErrorHandlingValueReader`1.GetValue(DbDataReader reader, Int32 ordinal)
+   在 System.Data.Common.Internal.Materialization.Shaper.GetPropertyValueWithErrorHandling[TProperty](Int32 ordinal, String propertyName, String typeName)
+   在 lambda_method(Closure , Shaper )
+   在 System.Data.Common.Internal.Materialization.Shaper.HandleEntityAppendOnly[TEntity](Func`2 constructEntityDelegate, EntityKey entityKey, EntitySet entitySet)
+   在 lambda_method(Closure , Shaper )
+   在 System.Data.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   在 System.Data.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Com.BaseLibrary.Service.DataBase`2.Query(QueryConditionInfo`1 queryCondition) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Service\DataBase.cs:行号 118
+   在 Jufine.Backend.Accounting.Business.ConsumerDetailsBL.QueryUV(QueryConditionInfo`1 queryCondition) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Projects\Accounting\Jufine.Backend.Accounting.ServiceImplement\Business\ConsumerDetailsBL.cs:行号 104</detail>
+  </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-15-130381425690448939" machine="PC-20140110DKZC" module="UnExceptedException" logType="UnExceptedException" logTime="2014/3/1 18:16:26">
+    <title>【PC-20140110DKZC】“UVConsumerDetails”的“ResponsiblePersonID”属性不能设置为“null”值。必须将该属性设置为类型为“Int32”的非 null 值。</title>
+    <detail>System.Data.ConstraintException: “UVConsumerDetails”的“ResponsiblePersonID”属性不能设置为“null”值。必须将该属性设置为类型为“Int32”的非 null 值。
+   在 System.Data.Common.Internal.Materialization.Shaper.ErrorHandlingValueReader`1.GetValue(DbDataReader reader, Int32 ordinal)
+   在 System.Data.Common.Internal.Materialization.Shaper.GetPropertyValueWithErrorHandling[TProperty](Int32 ordinal, String propertyName, String typeName)
+   在 lambda_method(Closure , Shaper )
+   在 System.Data.Common.Internal.Materialization.Shaper.HandleEntityAppendOnly[TEntity](Func`2 constructEntityDelegate, EntityKey entityKey, EntitySet entitySet)
+   在 lambda_method(Closure , Shaper )
+   在 System.Data.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   在 System.Data.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Com.BaseLibrary.Service.DataBase`2.Query(QueryConditionInfo`1 queryCondition) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Service\DataBase.cs:行号 118
+   在 Jufine.Backend.Accounting.Business.ConsumerDetailsBL.QueryUV(QueryConditionInfo`1 queryCondition) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Projects\Accounting\Jufine.Backend.Accounting.ServiceImplement\Business\ConsumerDetailsBL.cs:行号 104</detail>
+  </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-15-130381425690448939" machine="PC-20140110DKZC" module="UnExceptedException" logType="UnExceptedException" logTime="2014/3/1 18:17:15">
+    <title>【PC-20140110DKZC】“UVConsumerDetails”的“ResponsiblePersonID”属性不能设置为“null”值。必须将该属性设置为类型为“Int32”的非 null 值。</title>
+    <detail>System.Data.ConstraintException: “UVConsumerDetails”的“ResponsiblePersonID”属性不能设置为“null”值。必须将该属性设置为类型为“Int32”的非 null 值。
+   在 System.Data.Common.Internal.Materialization.Shaper.ErrorHandlingValueReader`1.GetValue(DbDataReader reader, Int32 ordinal)
+   在 System.Data.Common.Internal.Materialization.Shaper.GetPropertyValueWithErrorHandling[TProperty](Int32 ordinal, String propertyName, String typeName)
+   在 lambda_method(Closure , Shaper )
+   在 System.Data.Common.Internal.Materialization.Shaper.HandleEntityAppendOnly[TEntity](Func`2 constructEntityDelegate, EntityKey entityKey, EntitySet entitySet)
+   在 lambda_method(Closure , Shaper )
+   在 System.Data.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   在 System.Data.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Com.BaseLibrary.Service.DataBase`2.Query(QueryConditionInfo`1 queryCondition) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Service\DataBase.cs:行号 118
+   在 Jufine.Backend.Accounting.Business.ConsumerDetailsBL.QueryUV(QueryConditionInfo`1 queryCondition) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Projects\Accounting\Jufine.Backend.Accounting.ServiceImplement\Business\ConsumerDetailsBL.cs:行号 104</detail>
+  </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-16-130381426524586649" machine="PC-20140110DKZC" module="UnExceptedException" logType="UnExceptedException" logTime="2014/3/1 18:17:38">
+    <title>【PC-20140110DKZC】“ConsumerDetails”的“ResponsiblePersonID”属性不能设置为“null”值。必须将该属性设置为类型为“Int32”的非 null 值。</title>
+    <detail>System.Data.ConstraintException: “ConsumerDetails”的“ResponsiblePersonID”属性不能设置为“null”值。必须将该属性设置为类型为“Int32”的非 null 值。
+   在 System.Data.Common.Internal.Materialization.Shaper.ErrorHandlingValueReader`1.GetValue(DbDataReader reader, Int32 ordinal)
+   在 System.Data.Common.Internal.Materialization.Shaper.GetPropertyValueWithErrorHandling[TProperty](Int32 ordinal, String propertyName, String typeName)
+   在 lambda_method(Closure , Shaper )
+   在 System.Data.Common.Internal.Materialization.Shaper.HandleEntityAppendOnly[TEntity](Func`2 constructEntityDelegate, EntityKey entityKey, EntitySet entitySet)
+   在 lambda_method(Closure , Shaper )
+   在 System.Data.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   在 System.Data.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   在 System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   在 System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 Com.BaseLibrary.Service.DataBase`2.Get(Int32 id) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Service\DataBase.cs:行号 28
+   在 Jufine.Backend.Accounting.Business.ConsumerDetailsBL.Get(Int32 id) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Projects\Accounting\Jufine.Backend.Accounting.ServiceImplement\Business\ConsumerDetailsBL.cs:行号 20</detail>
+  </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-16-130381426524586649" machine="PC-20140110DKZC" module="UnExceptedException" logType="UnExceptedException" logTime="2014/3/1 18:18:09">
+    <title>【PC-20140110DKZC】“ConsumerDetails”的“ResponsiblePersonID”属性不能设置为“null”值。必须将该属性设置为类型为“Int32”的非 null 值。</title>
+    <detail>System.Data.ConstraintException: “ConsumerDetails”的“ResponsiblePersonID”属性不能设置为“null”值。必须将该属性设置为类型为“Int32”的非 null 值。
+   在 System.Data.Common.Internal.Materialization.Shaper.ErrorHandlingValueReader`1.GetValue(DbDataReader reader, Int32 ordinal)
+   在 System.Data.Common.Internal.Materialization.Shaper.GetPropertyValueWithErrorHandling[TProperty](Int32 ordinal, String propertyName, String typeName)
+   在 lambda_method(Closure , Shaper )
+   在 System.Data.Common.Internal.Materialization.Shaper.HandleEntityAppendOnly[TEntity](Func`2 constructEntityDelegate, EntityKey entityKey, EntitySet entitySet)
+   在 lambda_method(Closure , Shaper )
+   在 System.Data.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   在 System.Data.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   在 System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   在 System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 Com.BaseLibrary.Service.DataBase`2.Get(Int32 id) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Service\DataBase.cs:行号 28
+   在 Jufine.Backend.Accounting.Business.ConsumerDetailsBL.Get(Int32 id) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Projects\Accounting\Jufine.Backend.Accounting.ServiceImplement\Business\ConsumerDetailsBL.cs:行号 20</detail>
+  </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-16-130381426524586649" machine="PC-20140110DKZC" module="UnExceptedException" logType="UnExceptedException" logTime="2014/3/1 18:18:58">
+    <title>【PC-20140110DKZC】“ConsumerDetails”的“ResponsiblePersonID”属性不能设置为“null”值。必须将该属性设置为类型为“Int32”的非 null 值。</title>
+    <detail>System.Data.ConstraintException: “ConsumerDetails”的“ResponsiblePersonID”属性不能设置为“null”值。必须将该属性设置为类型为“Int32”的非 null 值。
+   在 System.Data.Common.Internal.Materialization.Shaper.ErrorHandlingValueReader`1.GetValue(DbDataReader reader, Int32 ordinal)
+   在 System.Data.Common.Internal.Materialization.Shaper.GetPropertyValueWithErrorHandling[TProperty](Int32 ordinal, String propertyName, String typeName)
+   在 lambda_method(Closure , Shaper )
+   在 System.Data.Common.Internal.Materialization.Shaper.HandleEntityAppendOnly[TEntity](Func`2 constructEntityDelegate, EntityKey entityKey, EntitySet entitySet)
+   在 lambda_method(Closure , Shaper )
+   在 System.Data.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   在 System.Data.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   在 System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   在 System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 Com.BaseLibrary.Service.DataBase`2.Get(Int32 id) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Service\DataBase.cs:行号 28
+   在 Jufine.Backend.Accounting.Business.ConsumerDetailsBL.Get(Int32 id) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Projects\Accounting\Jufine.Backend.Accounting.ServiceImplement\Business\ConsumerDetailsBL.cs:行号 20</detail>
+  </log>
 </logs>

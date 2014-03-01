@@ -48,14 +48,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Business\ConsumerDetailsBL.cs" />
+    <Compile Include="Business\UVConsumerDetailsBL.cs" />
     <Compile Include="Business\VideoListBL.cs" />
     <Compile Include="DataAccess\Accounting.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Accounting.edmx</DependentUpon>
     </Compile>
-    <Compile Include="DataAccess\Accounting、Entity.cs" />
+    <Compile Include="DataAccess\AccountingEntity.cs" />
     <Compile Include="DataAccess\ConsumerDetailsDA.cs" />
+    <Compile Include="DataAccess\UVConsumerDetailsDA.cs" />
     <Compile Include="DataAccess\VideoListDA.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

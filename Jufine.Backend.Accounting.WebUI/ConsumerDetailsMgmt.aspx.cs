@@ -17,7 +17,10 @@ namespace Jufine.Backend.Accounting.WebUI
     public partial class ConsumerDetailsMgmt : PageBase
     {
 
-        private const string customerCodeValuesGroupCode = "Platforms";//基础配置表数据获取组名称
+        private const string C_AccountingType = "Accounting_Type";//收支类型
+        private const string C_AmountDetail = "AmountDetail";
+        private const string C_ResponsiblePerson = "ResponsiblePerson";
+
         private const double timeOutValue = 0.05;//数据超时分钟     
         private static readonly Dictionary<string, DateTime> TimeStampDic = new Dictionary<string, DateTime>();//上一次的数据获取时间
 
@@ -45,24 +48,75 @@ namespace Jufine.Backend.Accounting.WebUI
         /// <summary>
         /// 基础配置表数据
         /// </summary>
-        private static List<CodeValueInfo> allCustomerCodeValues;
-        public static List<CodeValueInfo> EntireCustomerCodeValues
+        private static List<CodeValueInfo> allAccountingTypes;
+        public static List<CodeValueInfo> EntireAccountingTypes
         {
             get
             {
                 DateTime dtNow = DateTime.Now;
-                if (allCustomerCodeValues == null)
+                if (allAccountingTypes == null)
                 {
-                    allCustomerCodeValues = CodeValueService.GetCodeListByGroupCode(customerCodeValuesGroupCode);
-                    TimeStampDic.Add("EntireCustomerCodeValues", dtNow);
+                    allAccountingTypes = CodeValueService.GetCodeListByGroupCode(C_AccountingType);
+                    TimeStampDic.Add("ENTIREACCOUNTINGTYPES", dtNow);
                 }
 
-                if (GetDateDiffValue(TimeStampDic["EntireCustomerCodeValues"], dtNow) > timeOutValue)
+                if (GetDateDiffValue(TimeStampDic["ENTIREACCOUNTINGTYPES"], dtNow) > timeOutValue)
                 {
-                    allCustomerCodeValues = CodeValueService.GetCodeListByGroupCode(customerCodeValuesGroupCode);
-                    TimeStampDic["EntireCustomerCodeValues"] = dtNow;
+                    allAccountingTypes = CodeValueService.GetCodeListByGroupCode(C_AccountingType);
+                    TimeStampDic["ENTIREACCOUNTINGTYPES"] = dtNow;
                 }
-                return allCustomerCodeValues;
+                return allAccountingTypes;
+            }
+        }
+
+
+        //基础配置表数据
+        /// <summary>
+        /// 基础配置表数据
+        /// </summary>
+        private static List<CodeValueInfo> allResponsiblePersons;
+        public static List<CodeValueInfo> EntireResponsiblePersons
+        {
+            get
+            {
+                DateTime dtNow = DateTime.Now;
+                if (allResponsiblePersons == null)
+                {
+                    allResponsiblePersons = CodeValueService.GetCodeListByGroupCode(C_ResponsiblePerson);
+                    TimeStampDic.Add("ENTIRERESPONSIBLEPERSONS", dtNow);
+                }
+
+                if (GetDateDiffValue(TimeStampDic["ENTIRERESPONSIBLEPERSONS"], dtNow) > timeOutValue)
+                {
+                    allResponsiblePersons = CodeValueService.GetCodeListByGroupCode(C_ResponsiblePerson);
+                    TimeStampDic["ENTIRERESPONSIBLEPERSONS"] = dtNow;
+                }
+                return allResponsiblePersons;
+            }
+        }
+
+        //基础配置表数据
+        /// <summary>
+        /// 基础配置表数据
+        /// </summary>
+        private static List<CodeValueInfo> allAmountDetails;
+        public static List<CodeValueInfo> EntireAmountDetails
+        {
+            get
+            {
+                DateTime dtNow = DateTime.Now;
+                if (allAmountDetails == null)
+                {
+                    allAmountDetails = CodeValueService.GetCodeListByGroupCode(C_AmountDetail);
+                    TimeStampDic.Add("ENTIREAMOUNTDETAILS", dtNow);
+                }
+
+                if (GetDateDiffValue(TimeStampDic["ENTIREAMOUNTDETAILS"], dtNow) > timeOutValue)
+                {
+                    allAmountDetails = CodeValueService.GetCodeListByGroupCode(C_AmountDetail);
+                    TimeStampDic["ENTIREAMOUNTDETAILS"] = dtNow;
+                }
+                return allAmountDetails;
             }
         }
 
@@ -78,19 +132,20 @@ namespace Jufine.Backend.Accounting.WebUI
             }
         }
 
+
         //当前表查询条件
         /// <summary>
         /// 当前表查询条件
         /// </summary>
-        private QueryConditionInfo<ConsumerDetails> QueryCondition
+        private QueryConditionInfo<UVConsumerDetails> UVQueryCondition
         {
             get
             {
-                QueryConditionInfo<ConsumerDetails> queryCondition = ViewState["CONSUMERDETAILS_QUERYCONDITION"] as QueryConditionInfo<ConsumerDetails>;
+                QueryConditionInfo<UVConsumerDetails> queryCondition = ViewState["UVCONSUMERDETAILS_QUERYCONDITION"] as QueryConditionInfo<UVConsumerDetails>;
                 if (queryCondition == null)
                 {
-                    queryCondition = new QueryConditionInfo<ConsumerDetails>();
-                    ViewState["CONSUMERDETAILS_QUERYCONDITION"] = queryCondition;
+                    queryCondition = new QueryConditionInfo<UVConsumerDetails>();
+                    ViewState["UVCONSUMERDETAILS_QUERYCONDITION"] = queryCondition;
                 }
                 return queryCondition;
             }
@@ -139,7 +194,7 @@ namespace Jufine.Backend.Accounting.WebUI
             CoreExecAction(() =>
             {
                 listPager.CurrentPageIndex = 1;
-                FillEntityWithContentValue(QueryCondition.Condtion, plHeader);
+                FillEntityWithContentValue(UVQueryCondition.Condtion, plHeader);
                 QueryData();
             });
         }
@@ -152,8 +207,13 @@ namespace Jufine.Backend.Accounting.WebUI
         {
             CoreExecAction(() =>
             {
+                btnPreviousItem.Visible = btnNextItem.Visible = false;
+                CommonBindRBList(rdbResponsiblePerson, EntireResponsiblePersons, selectedValue: "2");
+                CommonBindRBList(rdbAccountingType, EntireAccountingTypes, selectedValue: "1");
+                CommonBindDDL(ddlAmountDetail, EntireAmountDetails);
+
                 ClearControlInput(panelDetailInputArea);
-                SetFocus(txtID);
+                SetFocus(txtAmount);
                 modalPopupExtender.Show();
             });
         }
@@ -186,6 +246,9 @@ namespace Jufine.Backend.Accounting.WebUI
             CoreExecAction(() =>
             {
                 btnPreviousItem.Visible = btnNextItem.Visible = true;
+                CommonBindRBList(rdbResponsiblePerson, EntireResponsiblePersons, selectedValue: "2");
+                CommonBindRBList(rdbAccountingType, EntireAccountingTypes, selectedValue: "1");
+                CommonBindDDL(ddlAmountDetail, EntireAmountDetails);
                 CurrentRowIndex = CoreExecLnkBtnClick(sender, ShowDetail, new List<string> { "CommandArgument" });
             }, QueryData);
         }
@@ -225,7 +288,7 @@ namespace Jufine.Backend.Accounting.WebUI
             CoreExecAction(() =>
             {
                 e.Cancel = true;
-                SetSortOrder(QueryCondition, e.SortExpression);
+                SetSortOrder(UVQueryCondition, e.SortExpression);
                 listPager.CurrentPageIndex = 0;
             }, QueryData);
         }
@@ -281,19 +344,25 @@ namespace Jufine.Backend.Accounting.WebUI
             modalPopupExtender.Show();
             hdID.Value = key.ToString();
             upDetail.Update();
-            SetFocus(txtID);
+            SetFocus(txtAmount);
         }
 
         private void QueryData()
         {
-            QueryCondition.PageIndex = listPager.CurrentPageIndex;
-            QueryCondition.PageSize = listPager.PageSize;
-            QueryResultInfo<ConsumerDetails> result = ConsumerDetailsService.Query(QueryCondition);
+            CommonBindRBList(srdbResponsiblePerson, EntireResponsiblePersons, true,defaultText:"全部责任人");
+            CommonBindRBList(srdbAccountingType, EntireAccountingTypes, true, defaultText: "全部收支");
+            CommonBindDDL(sddlAmountDetail, EntireAmountDetails, true);
 
-            SetOrderHeaderStyle(gvConsumerDetailsList, QueryCondition);
+
+
+            UVQueryCondition.PageIndex = listPager.CurrentPageIndex;
+            UVQueryCondition.PageSize = listPager.PageSize;
+            QueryResultInfo<UVConsumerDetails> result = ConsumerDetailsService.QueryUV(UVQueryCondition);
+
+            SetOrderHeaderStyle(gvConsumerDetailsList, UVQueryCondition);
             gvConsumerDetailsList.DataSource = result.RecordList;
             gvConsumerDetailsList.DataBind();
-            NoRecords<ConsumerDetails>(gvConsumerDetailsList);
+            NoRecords<UVConsumerDetails>(gvConsumerDetailsList);
             listPager.RecordCount = result.RecordCount;
             upList.Update();
         }
@@ -312,7 +381,7 @@ namespace Jufine.Backend.Accounting.WebUI
                 ConsumerDetailsService.Create(consumerDetails);
                 ShowMessageBox("创建信息成功");
                 ClearControlInput(panelDetailInputArea);
-                SetFocusControl(txtID);
+                SetFocusControl(txtAmount);
             }
             else
             {
@@ -320,7 +389,7 @@ namespace Jufine.Backend.Accounting.WebUI
                 consumerDetails = ConsumerDetailsService.Get(key);
                 FillEntityWithContentValue(consumerDetails, panelDetailInputArea);
                 ConsumerDetailsService.Update(consumerDetails);
-                modalPopupExtender.Hide();
+
                 ShowMessageBox("更新信息成功");
             }
         }
@@ -329,7 +398,6 @@ namespace Jufine.Backend.Accounting.WebUI
         {
             if (IsPostBack) return;
             QueryData();
-            //CommonBindRBList(rblForPlatforms, AllPlatforms, true, "-1", "全部");
             AddEnterEscPress(panelDetailInputArea, btnSave, btnCancel);
         }
 

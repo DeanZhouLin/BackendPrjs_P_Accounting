@@ -4,6 +4,7 @@ using System.Web.UI.WebControls;
 
 using Com.BaseLibrary.Contract;
 using Com.BaseLibrary.Entity;
+using Com.BaseLibrary.HttpCore;
 using Com.BaseLibrary.Utility;
 
 using Jufine.Backend.WebModel;
@@ -16,11 +17,11 @@ namespace Jufine.Backend.Accounting.WebUI
 {
     public partial class VideoListMgmt : PageBase
     {
-        
-        private const string customerCodeValuesGroupCode = "Platforms";//基础配置表数据获取组名称
+
+        private const string customerCodeValuesGroupCode = "VideoListType";//基础配置表数据获取组名称
         private const double timeOutValue = 0.05;//数据超时分钟     
         private static readonly Dictionary<string, DateTime> TimeStampDic = new Dictionary<string, DateTime>();//上一次的数据获取时间
-        
+
         //基础配置表操作Service
         /// <summary>
         /// 基础配置表操作Service
@@ -30,7 +31,7 @@ namespace Jufine.Backend.Accounting.WebUI
         {
             get { return codeValueService ?? (codeValueService = CreateService<ICodeValueService>()); }
         }
-        
+
         //当前表操作Service
         /// <summary>
         /// 当前表操作Service
@@ -40,7 +41,7 @@ namespace Jufine.Backend.Accounting.WebUI
         {
             get { return videoListService ?? (videoListService = CreateService<IVideoListService>()); }
         }
-        
+
         //基础配置表数据
         /// <summary>
         /// 基础配置表数据
@@ -65,7 +66,7 @@ namespace Jufine.Backend.Accounting.WebUI
                 return allCustomerCodeValues;
             }
         }
-        
+
         //当前用户名
         /// <summary>
         /// 当前用户名
@@ -77,7 +78,7 @@ namespace Jufine.Backend.Accounting.WebUI
                 return CurrentUser == null ? "" : CurrentUser.UserName;
             }
         }
-        
+
         //当前表查询条件
         /// <summary>
         /// 当前表查询条件
@@ -95,7 +96,7 @@ namespace Jufine.Backend.Accounting.WebUI
                 return queryCondition;
             }
         }
-        
+
         //当前行号
         /// <summary>
         /// 当前行号
@@ -120,6 +121,8 @@ namespace Jufine.Backend.Accounting.WebUI
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            CLVideoListControl cl = new CLVideoListControl(1);
+      cl.GetCLVideoList();
             CoreExecAction(InitPageData);
         }
 
@@ -127,9 +130,9 @@ namespace Jufine.Backend.Accounting.WebUI
         {
             base.OnPreRender(e);
             btnPreviousItem.Enabled = CurrentRowIndex > 0;
-            btnNextItem.Enabled = CurrentRowIndex < (gvVideoListList.Rows.Count-1);
+            btnNextItem.Enabled = CurrentRowIndex < (gvVideoListList.Rows.Count - 1);
         }
-        
+
         //查询
         /// <summary>
         /// 查询
@@ -139,11 +142,11 @@ namespace Jufine.Backend.Accounting.WebUI
             CoreExecAction(() =>
             {
                 listPager.CurrentPageIndex = 1;
-                FillEntityWithContentValue(QueryCondition.Condtion,plHeader);
+                FillEntityWithContentValue(QueryCondition.Condtion, plHeader);
                 QueryData();
             });
         }
-        
+
         //创建
         /// <summary>
         /// 创建
@@ -153,11 +156,11 @@ namespace Jufine.Backend.Accounting.WebUI
             CoreExecAction(() =>
             {
                 ClearControlInput(panelDetailInputArea);
-                SetFocus(txtID);
+
                 modalPopupExtender.Show();
             });
         }
-        
+
         //批量删除
         /// <summary>
         /// 批量删除
@@ -189,7 +192,7 @@ namespace Jufine.Backend.Accounting.WebUI
                 CurrentRowIndex = CoreExecLnkBtnClick(sender, ShowDetail, new List<string> { "CommandArgument" });
             }, QueryData);
         }
-        
+
         //保存
         /// <summary>
         /// 保存
@@ -206,7 +209,7 @@ namespace Jufine.Backend.Accounting.WebUI
                 CreateOrUpdate();
             }, QueryData);
         }
-        
+
         //取消
         /// <summary>
         /// 取消
@@ -215,7 +218,7 @@ namespace Jufine.Backend.Accounting.WebUI
         {
             CoreExecAction(() => modalPopupExtender.Hide(), QueryData);
         }
-        
+
         //列表排序
         /// <summary>
         /// 列表排序
@@ -229,7 +232,7 @@ namespace Jufine.Backend.Accounting.WebUI
                 listPager.CurrentPageIndex = 0;
             }, QueryData);
         }
-        
+
         //全选
         /// <summary>
         /// 全选
@@ -238,7 +241,7 @@ namespace Jufine.Backend.Accounting.WebUI
         {
             CoreExecAction(() => CkbSelectAllCheckedChangedInGridView(sender, gvVideoListList, upList));
         }
-        
+
         //分页
         /// <summary>
         /// 分页
@@ -247,7 +250,7 @@ namespace Jufine.Backend.Accounting.WebUI
         {
             CoreExecAction(QueryData);
         }
-        
+
         //上一页
         /// <summary>
         /// 上一页
@@ -259,7 +262,7 @@ namespace Jufine.Backend.Accounting.WebUI
                 CurrentRowIndex = PreviousShowAction(gvVideoListList, "lnkEdit", ShowDetail, CurrentRowIndex);
             });
         }
-        
+
         //下一页
         /// <summary>
         /// 下一页
@@ -271,19 +274,19 @@ namespace Jufine.Backend.Accounting.WebUI
                 CurrentRowIndex = NextShowAction(gvVideoListList, "lnkEdit", ShowDetail, CurrentRowIndex);
             });
         }
-        
-        
+
+
         private void ShowDetail(params object[] keys)
         {
             var key = Convert.ToInt32(keys[0]);
             var videoList = VideoListInfoService.Get(key);
-            FillContentValueWithEntity(videoList,panelDetailInputArea);
+            FillContentValueWithEntity(videoList, panelDetailInputArea);
             modalPopupExtender.Show();
             hdID.Value = key.ToString();
             upDetail.Update();
-            SetFocus(txtID);
+
         }
-        
+
         private void QueryData()
         {
             QueryCondition.PageIndex = listPager.CurrentPageIndex;
@@ -306,32 +309,33 @@ namespace Jufine.Backend.Accounting.WebUI
             if (string.IsNullOrEmpty(hdID.Value))
             {
                 videoList = new VideoListInfo();
-                FillEntityWithContentValue(videoList,panelDetailInputArea);
+                FillEntityWithContentValue(videoList, panelDetailInputArea);
                 videoList.CreateUser = CurrentUserName;
-				videoList.CreateDate = dtNow;
+                videoList.CreateDate = dtNow;
                 VideoListInfoService.Create(videoList);
                 ShowMessageBox("创建信息成功");
                 ClearControlInput(panelDetailInputArea);
-                SetFocusControl(txtID);
+
             }
             else
             {
                 Int32 key = StringUtil.ToType<Int32>(hdID.Value);
-                videoList= VideoListInfoService.Get(key);
-                FillEntityWithContentValue(videoList,panelDetailInputArea);
+                videoList = VideoListInfoService.Get(key);
+                FillEntityWithContentValue(videoList, panelDetailInputArea);
                 VideoListInfoService.Update(videoList);
                 modalPopupExtender.Hide();
                 ShowMessageBox("更新信息成功");
             }
         }
-        
+
         private void InitPageData()
         {
             if (IsPostBack) return;
             QueryData();
             //CommonBindRBList(rblForPlatforms, AllPlatforms, true, "-1", "全部");
+            CommonBindDDL(sddlVideoListTypes, EntireCustomerCodeValues, true, defaultText: "全部");
             AddEnterEscPress(panelDetailInputArea, btnSave, btnCancel);
         }
-        
+
     }
 }

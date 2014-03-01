@@ -220,85 +220,49 @@ namespace Jufine.Backend.Accounting.WebUI {
         protected global::System.Web.UI.WebControls.HiddenField hdID;
         
         /// <summary>
-        /// txtID 控件。
+        /// sddlVideoListTypes 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtID;
+        protected global::System.Web.UI.WebControls.DropDownList sddlVideoListTypes;
         
         /// <summary>
-        /// txtReplayCount 控件。
+        /// txtStartDate 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtReplayCount;
+        protected global::System.Web.UI.WebControls.TextBox txtStartDate;
         
         /// <summary>
-        /// txtLinkUrl 控件。
+        /// cdeStartDate 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtLinkUrl;
+        protected global::AjaxControlToolkit.CalendarExtender cdeStartDate;
         
         /// <summary>
-        /// txtDisplayName 控件。
+        /// txtEndDate 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDisplayName;
+        protected global::System.Web.UI.WebControls.TextBox txtEndDate;
         
         /// <summary>
-        /// txtCreateDate 控件。
+        /// cdeEndDate 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCreateDate;
-        
-        /// <summary>
-        /// cdeCreateDate 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::AjaxControlToolkit.CalendarExtender cdeCreateDate;
-        
-        /// <summary>
-        /// txtCreateUser 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCreateUser;
-        
-        /// <summary>
-        /// txtUploadUser 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtUploadUser;
-        
-        /// <summary>
-        /// txtVideoType 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtVideoType;
+        protected global::AjaxControlToolkit.CalendarExtender cdeEndDate;
         
         /// <summary>
         /// btnPreviousItem 控件。

@@ -19,5 +19,6 @@ namespace Jufine.Backend.Accounting.ServiceContracts
         void Delete(Int32 id);
         void BatchDelete(List<Int32> keyList);
         QueryResultInfo<ConsumerDetails> Query(QueryConditionInfo<ConsumerDetails> queryCondition);
-    }
+	    QueryResultInfo<UVConsumerDetails> QueryUV(QueryConditionInfo<UVConsumerDetails> queryCondition);
+	}
 }

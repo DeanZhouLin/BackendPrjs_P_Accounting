@@ -9,14 +9,14 @@ using Jufine.Backend.Accounting.DataContracts;
 
 namespace Jufine.Backend.Accounting.DataAccess 
 {
-	internal class ConsumerDetailsDA: DataBase<ConsumerDetails, AccountingEntities>
+	internal class UVConsumerDetailsDA: DataBase<UVConsumerDetails, AccountingEntities>
 	{
         
-        internal static ConsumerDetailsDA DAO = new ConsumerDetailsDA();
+        internal static UVConsumerDetailsDA DAO = new UVConsumerDetailsDA();
 		
-        private ConsumerDetailsDA(){ }
+        private UVConsumerDetailsDA(){ }
         
-        protected override void AttachValue(ConsumerDetails newEntity, ConsumerDetails oldEntity)
+        protected override void AttachValue(UVConsumerDetails newEntity, UVConsumerDetails oldEntity)
 		{
             oldEntity.Amount = newEntity.Amount;
             oldEntity.Type = newEntity.Type;
@@ -26,9 +26,12 @@ namespace Jufine.Backend.Accounting.DataAccess
             oldEntity.CreateDate = newEntity.CreateDate;
             oldEntity.ResponsiblePersonID = newEntity.ResponsiblePersonID;
             oldEntity.Status = newEntity.Status;
+            oldEntity.TypeText = newEntity.TypeText;
+            oldEntity.MemoTypeText = newEntity.MemoTypeText;
+            oldEntity.ResponsiblePersonText = newEntity.ResponsiblePersonText;
 		}
         
-        protected override IQueryable<ConsumerDetails> SetWhereClause(QueryConditionInfo<ConsumerDetails> queryCondition, IQueryable<ConsumerDetails> query)
+        protected override IQueryable<UVConsumerDetails> SetWhereClause(QueryConditionInfo<UVConsumerDetails> queryCondition, IQueryable<UVConsumerDetails> query)
 		{
                     if(queryCondition.Condtion.ID > 0)
                     {
@@ -70,10 +73,22 @@ namespace Jufine.Backend.Accounting.DataAccess
                     {
                         query = query.Where(c => c.Status==queryCondition.Condtion.Status);
                     }
+                    if(!string.IsNullOrEmpty( queryCondition.Condtion.TypeText ))
+                    {
+                        query = query.Where(c => c.TypeText.StartsWith(queryCondition.Condtion.TypeText));
+                    }
+                    if(!string.IsNullOrEmpty( queryCondition.Condtion.MemoTypeText ))
+                    {
+                        query = query.Where(c => c.MemoTypeText.StartsWith(queryCondition.Condtion.MemoTypeText));
+                    }
+                    if(!string.IsNullOrEmpty( queryCondition.Condtion.ResponsiblePersonText ))
+                    {
+                        query = query.Where(c => c.ResponsiblePersonText.StartsWith(queryCondition.Condtion.ResponsiblePersonText));
+                    }
             return query;
 		}
         
-        protected override IQueryable<ConsumerDetails> SetOrder(QueryConditionInfo<ConsumerDetails> queryCondition, IQueryable<ConsumerDetails> query)
+        protected override IQueryable<UVConsumerDetails> SetOrder(QueryConditionInfo<UVConsumerDetails> queryCondition, IQueryable<UVConsumerDetails> query)
 		{
             int count = queryCondition.OrderFileds.Count;
 			if (count > 0)
@@ -117,6 +132,18 @@ namespace Jufine.Backend.Accounting.DataAccess
 					    {
                             query = item.OrderDirection == OrderDirection.ASC ? query.OrderBy(c => c.Status) : query.OrderByDescending(c => c.Status);
 					    }
+					    if (item.FieldName == "TypeText")
+					    {
+                            query = item.OrderDirection == OrderDirection.ASC ? query.OrderBy(c => c.TypeText) : query.OrderByDescending(c => c.TypeText);
+					    }
+					    if (item.FieldName == "MemoTypeText")
+					    {
+                            query = item.OrderDirection == OrderDirection.ASC ? query.OrderBy(c => c.MemoTypeText) : query.OrderByDescending(c => c.MemoTypeText);
+					    }
+					    if (item.FieldName == "ResponsiblePersonText")
+					    {
+                            query = item.OrderDirection == OrderDirection.ASC ? query.OrderBy(c => c.ResponsiblePersonText) : query.OrderByDescending(c => c.ResponsiblePersonText);
+					    }
 				}
 			}
 			else
@@ -126,15 +153,15 @@ namespace Jufine.Backend.Accounting.DataAccess
             return query;
 		}
         
-        public void ChangeStatus(ConsumerDetails entity)
+        public void ChangeStatus(UVConsumerDetails entity)
 		{
 			using ( AccountingEntities entities = new  AccountingEntities())
 			{
-				ObjectSet<ConsumerDetails> objectSet = entities.CreateObjectSet<ConsumerDetails>();
-				ConsumerDetails ConsumerDetails = objectSet.FirstOrDefault(c => c.ID == entity.ID);
-				if (ConsumerDetails != null)
+				ObjectSet<UVConsumerDetails> objectSet = entities.CreateObjectSet<UVConsumerDetails>();
+				UVConsumerDetails UVConsumerDetails = objectSet.FirstOrDefault(c => c.ID == entity.ID);
+				if (UVConsumerDetails != null)
 				{
-					ConsumerDetails.Status = entity.Status;
+					UVConsumerDetails.Status = entity.Status;
 					entities.SaveChanges();
 				}
 			}

@@ -153,62 +153,29 @@
                             <div class="c1">
                                 <table style="width: 100%;">
                                     <tr>
-                                        <td style="width: 80px;">ID
+                                        <td style="width: 80px;">视频列表类型
                                         </td>
                                         <td>
-                                            <asp:TextBox ID="txtID" PropertyName="ID" MaxLength="4" Width="200" runat="server"></asp:TextBox>
+                                            <asp:DropDownList data-placeholder="请选择" ID="sddlVideoListTypes" runat="server"
+                                                Width="147px" TabIndex="1" DataTextField="CodeText" DataValueField="CodeValue" />
                                         </td>
-
-                                        <td style="width: 80px;">ReplayCount
-                                        </td>
-                                        <td>
-                                            <asp:TextBox ID="txtReplayCount" PropertyName="ReplayCount" MaxLength="4" Width="200" runat="server"></asp:TextBox>
-                                        </td>
-
                                     </tr>
                                     <tr>
-                                        <td style="width: 80px;">LinkUrl
+                                        <td style="width: 80px;">开始日期
                                         </td>
                                         <td>
-                                            <asp:TextBox ID="txtLinkUrl" PropertyName="LinkUrl" MaxLength="500" Width="200" runat="server"></asp:TextBox>
+                                            <asp:TextBox ID="txtStartDate" MaxLength="20" Width="200" runat="server"></asp:TextBox>
+                                            <asp:CalendarExtender ID="cdeStartDate" runat="server" TargetControlID="txtStartDate" Format="yyyy-MM-dd" FirstDayOfWeek="Monday" />
                                         </td>
 
-                                        <td style="width: 80px;">DisplayName
+                                        <td style="width: 80px;">截止日期
                                         </td>
                                         <td>
-                                            <asp:TextBox ID="txtDisplayName" PropertyName="DisplayName" MaxLength="500" Width="200" runat="server"></asp:TextBox>
+                                            <asp:TextBox ID="txtEndDate" MaxLength="20" Width="200" runat="server"></asp:TextBox>
+                                            <asp:CalendarExtender ID="cdeEndDate" runat="server" TargetControlID="txtEndDate" Format="yyyy-MM-dd" FirstDayOfWeek="Monday" />
                                         </td>
-
                                     </tr>
-                                    <tr>
-                                        <td style="width: 80px;">CreateDate
-                                        </td>
-                                        <td>
-                                            <asp:TextBox ID="txtCreateDate" PropertyName="CreateDate" MaxLength="20" Width="200" runat="server"></asp:TextBox>
-                                            <asp:CalendarExtender ID="cdeCreateDate" runat="server" TargetControlID="txtCreateDate" Format="yyyy-MM-dd HH:mm:ss" FirstDayOfWeek="Monday" />
-                                        </td>
 
-                                        <td style="width: 80px;">CreateUser
-                                        </td>
-                                        <td>
-                                            <asp:TextBox ID="txtCreateUser" PropertyName="CreateUser" MaxLength="50" Width="200" runat="server"></asp:TextBox>
-                                        </td>
-
-                                    </tr>
-                                    <tr>
-                                        <td style="width: 80px;">UploadUser
-                                        </td>
-                                        <td>
-                                            <asp:TextBox ID="txtUploadUser" PropertyName="UploadUser" MaxLength="500" Width="200" runat="server"></asp:TextBox>
-                                        </td>
-
-                                        <td style="width: 80px;">VideoType
-                                        </td>
-                                        <td>
-                                            <asp:TextBox ID="txtVideoType" PropertyName="VideoType" MaxLength="4" Width="200" runat="server"></asp:TextBox>
-                                        </td>
-
-                                    </tr>
                                 </table>
                             </div>
                         </asp:Panel>

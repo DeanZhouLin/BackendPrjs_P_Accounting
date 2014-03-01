@@ -10,14 +10,14 @@ using Jufine.Backend.Accounting.DataAccess;
 
 namespace Jufine.Backend.Accounting.Business
 {
-	public class ConsumerDetailsBL :IConsumerDetailsService
+	public class UVConsumerDetailsBL :IUVConsumerDetailsService
 	{
        
-		public ConsumerDetails Get(Int32 id)
+		public UVConsumerDetails Get(Int32 id)
         {
             try
             {
-                return ConsumerDetailsDA.DAO.Get(id);
+                return UVConsumerDetailsDA.DAO.Get(id);
             }
             catch (Exception ex)
             {
@@ -29,7 +29,7 @@ namespace Jufine.Backend.Accounting.Business
         {
             try
             {
-                 ConsumerDetailsDA.DAO.Delete(id);
+                 UVConsumerDetailsDA.DAO.Delete(id);
             }
             catch (Exception ex)
             {
@@ -41,7 +41,7 @@ namespace Jufine.Backend.Accounting.Business
         {
             try
             {
-                ConsumerDetailsDA.DAO.BatchDelete(keyList);
+                UVConsumerDetailsDA.DAO.BatchDelete(keyList);
             }
             catch (Exception ex)
             {
@@ -49,11 +49,11 @@ namespace Jufine.Backend.Accounting.Business
             }
         }
     
-        public List<ConsumerDetails> GetAll()
+        public List<UVConsumerDetails> GetAll()
         {
             try
             {
-                return ConsumerDetailsDA.DAO.GetAll();
+                return UVConsumerDetailsDA.DAO.GetAll();
             }
             catch (Exception ex)
             {
@@ -61,11 +61,11 @@ namespace Jufine.Backend.Accounting.Business
             }
         }
 
-        public void Create(ConsumerDetails consumerDetails)
+        public void Create(UVConsumerDetails uVConsumerDetails)
         {
             try
             {
-                ConsumerDetailsDA.DAO.Create(consumerDetails);
+                UVConsumerDetailsDA.DAO.Create(uVConsumerDetails);
             }
             catch (Exception ex)
             {
@@ -73,11 +73,11 @@ namespace Jufine.Backend.Accounting.Business
             }
         }
 
-        public void Update(ConsumerDetails consumerDetails)
+        public void Update(UVConsumerDetails uVConsumerDetails)
         {
             try
             {
-                ConsumerDetailsDA.DAO.Update(consumerDetails);
+                UVConsumerDetailsDA.DAO.Update(uVConsumerDetails);
             }
             catch (Exception ex)
             {
@@ -85,11 +85,11 @@ namespace Jufine.Backend.Accounting.Business
             }
         }
         
-        public QueryResultInfo<ConsumerDetails> Query(QueryConditionInfo<ConsumerDetails> queryCondition)
+        public QueryResultInfo<UVConsumerDetails> Query(QueryConditionInfo<UVConsumerDetails> queryCondition)
         {
            try
             {
-               return ConsumerDetailsDA.DAO.Query(queryCondition);
+               return UVConsumerDetailsDA.DAO.Query(queryCondition);
             }
             catch (Exception ex)
             {
@@ -97,16 +97,5 @@ namespace Jufine.Backend.Accounting.Business
             } 
         }
 
-        public QueryResultInfo<UVConsumerDetails> QueryUV(QueryConditionInfo<UVConsumerDetails> queryCondition)
-        {
-            try
-            {
-                return UVConsumerDetailsDA.DAO.Query(queryCondition);
-            }
-            catch (Exception ex)
-            {
-                throw ExceptionFactory.BuildException(ex);
-            }
-        }
     }
 }
