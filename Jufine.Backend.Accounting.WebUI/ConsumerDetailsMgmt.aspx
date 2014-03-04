@@ -92,7 +92,8 @@
                     <asp:BoundField DataField="CreateDate" HeaderText="创建时间" SortExpression="CreateDate" ItemStyle-Width="60" />
                 </Columns>
             </asp:GridView>
-            <div class="pagination">
+            <div class="pagination" style="height: 45px">
+                <label id="lblTotalConsumer" runat="server"></label>
                 <asp:ListPager Width="100%" ID="listPager" runat="server" FirstPageText="首页" LastPageText="尾页"
                     NextPageText="下一页" OnPageChanged="listPager_PageChanged" PageSize="15" PrevPageText="上一页"
                     ShowPageIndexBox="Always" PageIndexBoxType="TextBox" ShowNavigationToolTip="True"

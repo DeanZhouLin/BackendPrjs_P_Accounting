@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Web.UI.WebControls;
 
 using Com.BaseLibrary.Contract;
@@ -349,7 +350,7 @@ namespace Jufine.Backend.Accounting.WebUI
 
         private void QueryData()
         {
-            CommonBindRBList(srdbResponsiblePerson, EntireResponsiblePersons, true,defaultText:"全部责任人");
+            CommonBindRBList(srdbResponsiblePerson, EntireResponsiblePersons, true, defaultText: "全部责任人");
             CommonBindRBList(srdbAccountingType, EntireAccountingTypes, true, defaultText: "全部收支");
             CommonBindDDL(sddlAmountDetail, EntireAmountDetails, true);
 
@@ -359,6 +360,8 @@ namespace Jufine.Backend.Accounting.WebUI
             UVQueryCondition.PageSize = listPager.PageSize;
             QueryResultInfo<UVConsumerDetails> result = ConsumerDetailsService.QueryUV(UVQueryCondition);
 
+            var consumerTotal = result.RecordList.Where(c => c.TypeText == "支出").Sum(c => c.Amount);
+            lblTotalConsumer.InnerHtml = "当前查询消费总额是：" + consumerTotal;
             SetOrderHeaderStyle(gvConsumerDetailsList, UVQueryCondition);
             gvConsumerDetailsList.DataSource = result.RecordList;
             gvConsumerDetailsList.DataBind();
