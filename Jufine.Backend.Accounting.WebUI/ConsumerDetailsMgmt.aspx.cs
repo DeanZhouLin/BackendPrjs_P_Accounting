@@ -213,7 +213,9 @@ namespace Jufine.Backend.Accounting.WebUI
                 CommonBindRBList(rdbAccountingType, EntireAccountingTypes, selectedValue: "1");
                 CommonBindDDL(ddlAmountDetail, EntireAmountDetails);
 
+
                 ClearControlInput(panelDetailInputArea);
+                txtUsedData.Text = CommonFormatDateTime(DateTime.Now);
                 SetFocus(txtAmount);
                 modalPopupExtender.Show();
             });
@@ -342,6 +344,7 @@ namespace Jufine.Backend.Accounting.WebUI
             var key = Convert.ToInt32(keys[0]);
             var consumerDetails = ConsumerDetailsService.Get(key);
             FillContentValueWithEntity(consumerDetails, panelDetailInputArea);
+            txtUsedData.Text = CommonFormatDateTime(consumerDetails.UsedDate);
             modalPopupExtender.Show();
             hdID.Value = key.ToString();
             upDetail.Update();

@@ -38,6 +38,7 @@
           <Property Name="CreateDate" Type="datetime" Nullable="false" />
           <Property Name="ResponsiblePersonID" Type="int" />
           <Property Name="Status" Type="int" />
+          <Property Name="UsedDate" Type="datetime" />
         </EntityType>
         <EntityType Name="VideoListInfo">
           <Key>
@@ -82,24 +83,10 @@
     <edmx:ConceptualModels>
       <Schema Namespace="AccountingModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityContainer Name="AccountingEntities" p1:LazyLoadingEnabled="true">
-          <EntitySet Name="ConsumerDetails" EntityType="AccountingModel.ConsumerDetails" />
           <EntitySet Name="VideoListInfo" EntityType="AccountingModel.VideoListInfo" />
           <EntitySet Name="UVConsumerDetails" EntityType="AccountingModel.UVConsumerDetails" />
+          <EntitySet Name="ConsumerDetails" EntityType="AccountingModel.ConsumerDetails" />
         </EntityContainer>
-        <EntityType Name="ConsumerDetails">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Type="Decimal" Name="Amount" Nullable="false" Precision="18" Scale="2" />
-          <Property Type="Int32" Name="Type" Nullable="false" />
-          <Property Type="Int32" Name="MemoTypeID" Nullable="false" />
-          <Property Type="String" Name="Memo" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Type="String" Name="CreateUser" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Type="DateTime" Name="CreateDate" Nullable="false" Precision="3" />
-          <Property Type="Int32" Name="ResponsiblePersonID" />
-          <Property Type="Int32" Name="Status" />
-        </EntityType>
         <EntityType Name="VideoListInfo">
           <Key>
             <PropertyRef Name="ID" />
@@ -135,27 +122,27 @@
           <Property Type="String" Name="MemoTypeText" MaxLength="400" FixedLength="false" Unicode="true" />
           <Property Type="String" Name="ResponsiblePersonText" MaxLength="400" FixedLength="false" Unicode="true" />
         </EntityType>
+        <EntityType Name="ConsumerDetails">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Decimal" Name="Amount" Nullable="false" Precision="18" Scale="2" />
+          <Property Type="Int32" Name="Type" Nullable="false" />
+          <Property Type="Int32" Name="MemoTypeID" Nullable="false" />
+          <Property Type="String" Name="Memo" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CreateUser" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CreateDate" Nullable="false" Precision="3" />
+          <Property Type="Int32" Name="ResponsiblePersonID" />
+          <Property Type="Int32" Name="Status" />
+          <Property Type="DateTime" Name="UsedDate" Precision="3" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="AccountingModelStoreContainer" CdmEntityContainer="AccountingEntities">
-          <EntitySetMapping Name="ConsumerDetails">
-            <EntityTypeMapping TypeName="AccountingModel.ConsumerDetails">
-              <MappingFragment StoreEntitySet="ConsumerDetails">
-                <ScalarProperty Name="Status" ColumnName="Status" />
-                <ScalarProperty Name="ResponsiblePersonID" ColumnName="ResponsiblePersonID" />
-                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
-                <ScalarProperty Name="CreateUser" ColumnName="CreateUser" />
-                <ScalarProperty Name="Memo" ColumnName="Memo" />
-                <ScalarProperty Name="MemoTypeID" ColumnName="MemoTypeID" />
-                <ScalarProperty Name="Type" ColumnName="Type" />
-                <ScalarProperty Name="Amount" ColumnName="Amount" />
-                <ScalarProperty Name="ID" ColumnName="ID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="VideoListInfo">
             <EntityTypeMapping TypeName="AccountingModel.VideoListInfo">
               <MappingFragment StoreEntitySet="VideoListInfo">
@@ -176,6 +163,22 @@
                 <ScalarProperty Name="ResponsiblePersonText" ColumnName="ResponsiblePersonText" />
                 <ScalarProperty Name="MemoTypeText" ColumnName="MemoTypeText" />
                 <ScalarProperty Name="TypeText" ColumnName="TypeText" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="ResponsiblePersonID" ColumnName="ResponsiblePersonID" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="CreateUser" ColumnName="CreateUser" />
+                <ScalarProperty Name="Memo" ColumnName="Memo" />
+                <ScalarProperty Name="MemoTypeID" ColumnName="MemoTypeID" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ConsumerDetails">
+            <EntityTypeMapping TypeName="AccountingModel.ConsumerDetails">
+              <MappingFragment StoreEntitySet="ConsumerDetails">
+                <ScalarProperty Name="UsedDate" ColumnName="UsedDate" />
                 <ScalarProperty Name="Status" ColumnName="Status" />
                 <ScalarProperty Name="ResponsiblePersonID" ColumnName="ResponsiblePersonID" />
                 <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
@@ -209,10 +212,10 @@
     </Options>
     <!-- Diagram content (shape and connector positions) -->
     <Diagrams>
-      <Diagram DiagramId="d7ca0962aa344c68abbbbc466cb67166" Name="关系图1">
-        <EntityTypeShape EntityType="AccountingModel.ConsumerDetails" Width="1.5" PointX="10.065192828916569" PointY="26.854260174024041" />
+      <Diagram DiagramId="d7ca0962aa344c68abbbbc466cb67166" Name="关系图1" ZoomLevel="82">
         <EntityTypeShape EntityType="AccountingModel.VideoListInfo" Width="1.5" PointX="0.73157130215855837" PointY="29.527950032394354" />
         <EntityTypeShape EntityType="AccountingModel.UVConsumerDetails" Width="1.5" PointX="8.8420936655449189" PointY="29.874075352155639" />
+        <EntityTypeShape EntityType="AccountingModel.ConsumerDetails" Width="1.5" PointX="5.625" PointY="4" />
       </Diagram>
     </Diagrams>
   </Designer>

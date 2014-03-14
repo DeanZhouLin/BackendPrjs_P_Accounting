@@ -159,9 +159,14 @@
                                         </td>
                                     </tr>
                                     <tr>
+                                        <td style="width: 80px">使用日期</td>
+                                        <td>
+                                            <asp:TextBox ID="txtUsedData" PropertyName="UsedDate" Width="160" runat="server"></asp:TextBox>
+                                            <asp:CalendarExtender ID="ceUsedDate" runat="server" TargetControlID="txtUsedData" Format="yyyy-MM-dd HH:mm:ss" FirstDayOfWeek="Monday" />
+                                        </td>
                                         <td style="width: 80px;">资金责任人
                                         </td>
-                                        <td colspan="3">
+                                        <td>
                                             <asp:RadioButtonList RepeatDirection="Horizontal" ID="rdbResponsiblePerson" DataTextField="CodeText" DataValueField="CodeValue" PropertyName="ResponsiblePersonID" runat="server" />
                                         </td>
                                     </tr>

@@ -16,6 +16,7 @@ namespace Jufine.Backend.Accounting.DataContracts
         public DateTime? CreateDateTo{get;set;}
 		public Int32? ResponsiblePersonID{get;set;}
 		public Int32? Status{get;set;}
-		
+        public DateTime? UsedDate { get; set; }
+        public DateTime? UsedDateTo { get; set; }
 	}
 }
