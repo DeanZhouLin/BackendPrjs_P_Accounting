@@ -1222,4 +1222,1020 @@
    在 System.Web.UI.Page.PerformPreInit()
    在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</detail>
   </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-1-130398855214048249" machine="PC-20140110DKZC" module="UnExceptedException" logType="UnExceptedException" logTime="2014/3/21 22:44:47">
+    <title>【PC-20140110DKZC】执行命令定义时出错。有关详细信息，请参阅内部异常。</title>
+    <detail>System.Data.EntityCommandExecutionException: 执行命令定义时出错。有关详细信息，请参阅内部异常。 ---&gt; System.Data.SqlClient.SqlException: 对象名 'dbo.UV_ConsumerDetails' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.EntityClient.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.EntityClient.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   在 System.Data.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   在 System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator()
+   在 System.Linq.Enumerable.Single[TSource](IEnumerable`1 source)
+   在 System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   在 Com.BaseLibrary.Service.DataBase`2.Query(QueryConditionInfo`1 queryCondition) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Service\DataBase.cs:行号 101
+   在 Jufine.Backend.Accounting.Business.ConsumerDetailsBL.QueryUV(QueryConditionInfo`1 queryCondition) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Projects\Accounting\Jufine.Backend.Accounting.ServiceImplement\Business\ConsumerDetailsBL.cs:行号 104</detail>
+  </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-1-130398855214048249" machine="PC-20140110DKZC" module="UnExceptedException" logType="UnExceptedException" logTime="2014/3/21 22:44:52">
+    <title>【PC-20140110DKZC】执行命令定义时出错。有关详细信息，请参阅内部异常。</title>
+    <detail>System.Data.EntityCommandExecutionException: 执行命令定义时出错。有关详细信息，请参阅内部异常。 ---&gt; System.Data.SqlClient.SqlException: 对象名 'dbo.UV_ConsumerDetails' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.EntityClient.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.EntityClient.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   在 System.Data.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   在 System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator()
+   在 System.Linq.Enumerable.Single[TSource](IEnumerable`1 source)
+   在 System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   在 Com.BaseLibrary.Service.DataBase`2.Query(QueryConditionInfo`1 queryCondition) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Service\DataBase.cs:行号 101
+   在 Jufine.Backend.Accounting.Business.ConsumerDetailsBL.QueryUV(QueryConditionInfo`1 queryCondition) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Projects\Accounting\Jufine.Backend.Accounting.ServiceImplement\Business\ConsumerDetailsBL.cs:行号 104</detail>
+  </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-1-130398855214048249" machine="PC-20140110DKZC" module="UnExceptedException" logType="UnExceptedException" logTime="2014/3/21 22:45:26">
+    <title>【PC-20140110DKZC】执行命令定义时出错。有关详细信息，请参阅内部异常。</title>
+    <detail>System.Data.EntityCommandExecutionException: 执行命令定义时出错。有关详细信息，请参阅内部异常。 ---&gt; System.Data.SqlClient.SqlException: 对象名 'dbo.UV_ConsumerDetails' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.EntityClient.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.EntityClient.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   在 System.Data.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   在 System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator()
+   在 System.Linq.Enumerable.Single[TSource](IEnumerable`1 source)
+   在 System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   在 Com.BaseLibrary.Service.DataBase`2.Query(QueryConditionInfo`1 queryCondition) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Service\DataBase.cs:行号 101
+   在 Jufine.Backend.Accounting.Business.ConsumerDetailsBL.QueryUV(QueryConditionInfo`1 queryCondition) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Projects\Accounting\Jufine.Backend.Accounting.ServiceImplement\Business\ConsumerDetailsBL.cs:行号 104</detail>
+  </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-1-130398855214048249" machine="PC-20140110DKZC" module="UnExceptedException" logType="UnExceptedException" logTime="2014/3/21 22:45:38">
+    <title>【PC-20140110DKZC】执行命令定义时出错。有关详细信息，请参阅内部异常。</title>
+    <detail>System.Data.EntityCommandExecutionException: 执行命令定义时出错。有关详细信息，请参阅内部异常。 ---&gt; System.Data.SqlClient.SqlException: 对象名 'dbo.UV_ConsumerDetails' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.EntityClient.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.EntityClient.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   在 System.Data.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   在 System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator()
+   在 System.Linq.Enumerable.Single[TSource](IEnumerable`1 source)
+   在 System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   在 Com.BaseLibrary.Service.DataBase`2.Query(QueryConditionInfo`1 queryCondition) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Service\DataBase.cs:行号 101
+   在 Jufine.Backend.Accounting.Business.ConsumerDetailsBL.QueryUV(QueryConditionInfo`1 queryCondition) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Projects\Accounting\Jufine.Backend.Accounting.ServiceImplement\Business\ConsumerDetailsBL.cs:行号 104</detail>
+  </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-2-130398868666487685" machine="PC-20140110DKZC" module="UnExceptedException" logType="UnExceptedException" logTime="2014/3/21 22:47:53">
+    <title>【PC-20140110DKZC】执行命令定义时出错。有关详细信息，请参阅内部异常。</title>
+    <detail>System.Data.EntityCommandExecutionException: 执行命令定义时出错。有关详细信息，请参阅内部异常。 ---&gt; System.Data.SqlClient.SqlException: 对象名 'dbo.UV_ConsumerDetails' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.EntityClient.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.EntityClient.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   在 System.Data.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   在 System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator()
+   在 System.Linq.Enumerable.Single[TSource](IEnumerable`1 source)
+   在 System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   在 Com.BaseLibrary.Service.DataBase`2.Query(QueryConditionInfo`1 queryCondition) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Service\DataBase.cs:行号 101
+   在 Jufine.Backend.Accounting.Business.ConsumerDetailsBL.QueryUV(QueryConditionInfo`1 queryCondition) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Projects\Accounting\Jufine.Backend.Accounting.ServiceImplement\Business\ConsumerDetailsBL.cs:行号 104</detail>
+  </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-2-130398868666487685" machine="PC-20140110DKZC" module="UnExceptedException" logType="UnExceptedException" logTime="2014/3/21 22:48:06">
+    <title>【PC-20140110DKZC】执行命令定义时出错。有关详细信息，请参阅内部异常。</title>
+    <detail>System.Data.EntityCommandExecutionException: 执行命令定义时出错。有关详细信息，请参阅内部异常。 ---&gt; System.Data.SqlClient.SqlException: 对象名 'dbo.UV_ConsumerDetails' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.EntityClient.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.EntityClient.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   在 System.Data.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   在 System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator()
+   在 System.Linq.Enumerable.Single[TSource](IEnumerable`1 source)
+   在 System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   在 Com.BaseLibrary.Service.DataBase`2.Query(QueryConditionInfo`1 queryCondition) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Service\DataBase.cs:行号 101
+   在 Jufine.Backend.Accounting.Business.ConsumerDetailsBL.QueryUV(QueryConditionInfo`1 queryCondition) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Projects\Accounting\Jufine.Backend.Accounting.ServiceImplement\Business\ConsumerDetailsBL.cs:行号 104</detail>
+  </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-2-130398868666487685" machine="PC-20140110DKZC" module="UnExceptedException" logType="UnExceptedException" logTime="2014/3/21 22:48:12">
+    <title>【PC-20140110DKZC】执行命令定义时出错。有关详细信息，请参阅内部异常。</title>
+    <detail>System.Data.EntityCommandExecutionException: 执行命令定义时出错。有关详细信息，请参阅内部异常。 ---&gt; System.Data.SqlClient.SqlException: 对象名 'dbo.UV_ConsumerDetails' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.EntityClient.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.EntityClient.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   在 System.Data.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   在 System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator()
+   在 System.Linq.Enumerable.Single[TSource](IEnumerable`1 source)
+   在 System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   在 Com.BaseLibrary.Service.DataBase`2.Query(QueryConditionInfo`1 queryCondition) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Service\DataBase.cs:行号 101
+   在 Jufine.Backend.Accounting.Business.ConsumerDetailsBL.QueryUV(QueryConditionInfo`1 queryCondition) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Projects\Accounting\Jufine.Backend.Accounting.ServiceImplement\Business\ConsumerDetailsBL.cs:行号 104</detail>
+  </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-2-130398868666487685" machine="PC-20140110DKZC" module="UnExceptedException" logType="UnExceptedException" logTime="2014/3/21 22:48:35">
+    <title>【PC-20140110DKZC】执行命令定义时出错。有关详细信息，请参阅内部异常。</title>
+    <detail>System.Data.EntityCommandExecutionException: 执行命令定义时出错。有关详细信息，请参阅内部异常。 ---&gt; System.Data.SqlClient.SqlException: 对象名 'dbo.UV_ConsumerDetails' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.EntityClient.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.EntityClient.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   在 System.Data.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   在 System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator()
+   在 System.Linq.Enumerable.Single[TSource](IEnumerable`1 source)
+   在 System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   在 Com.BaseLibrary.Service.DataBase`2.Query(QueryConditionInfo`1 queryCondition) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Service\DataBase.cs:行号 101
+   在 Jufine.Backend.Accounting.Business.ConsumerDetailsBL.QueryUV(QueryConditionInfo`1 queryCondition) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Projects\Accounting\Jufine.Backend.Accounting.ServiceImplement\Business\ConsumerDetailsBL.cs:行号 104</detail>
+  </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-1-130399579835790385" machine="PC-20140110DKZC" module="BackendUI" logType="Error" logTime="2014/3/22 18:33:06">
+    <title>【PC-20140110DKZC】“Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。</title>
+    <detail>System.TypeInitializationException: “Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。 ---&gt; System.Data.SqlClient.SqlException: 在文件 'G:\SqlServerData\Security.mdf' 中、偏移量为 0x00000000188000 的位置执行 读取 期间，操作系统已经向 SQL Server 返回了错误 21(设备未就绪。)。SQL Server 错误日志和系统事件日志中的其他消息可能提供了更详细信息。这是一个威胁数据库完整性的严重系统级错误条件，必须立即纠正。请执行完整的数据库一致性检查(DBCC CHECKDB)。此错误可以由许多因素导致；有关详细信息，请参阅 SQL Server 联机丛书。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 541
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 460
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 435
+   在 Jufine.Backend.Security.Authentication.User.GetAllResource()
+   在 Jufine.Backend.Security.Authentication.User..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Jufine.Backend.Security.Authentication.User..ctor()
+   在 Jufine.Backend.Security.Authentication.UserFactory.CreateUser()
+   在 Jufine.Backend.WebModel.PageBase.OnPreInit(EventArgs e) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Jufine.Backend.WebModel\PageBase.cs:行号 59
+   在 System.Web.UI.Page.PerformPreInit()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</detail>
+  </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-1-130399579835790385" machine="PC-20140110DKZC" module="BackendUI" logType="Error" logTime="2014/3/22 18:33:20">
+    <title>【PC-20140110DKZC】“Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。</title>
+    <detail>System.TypeInitializationException: “Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。 ---&gt; System.Data.SqlClient.SqlException: 在文件 'G:\SqlServerData\Security.mdf' 中、偏移量为 0x00000000188000 的位置执行 读取 期间，操作系统已经向 SQL Server 返回了错误 21(设备未就绪。)。SQL Server 错误日志和系统事件日志中的其他消息可能提供了更详细信息。这是一个威胁数据库完整性的严重系统级错误条件，必须立即纠正。请执行完整的数据库一致性检查(DBCC CHECKDB)。此错误可以由许多因素导致；有关详细信息，请参阅 SQL Server 联机丛书。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 541
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 460
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 435
+   在 Jufine.Backend.Security.Authentication.User.GetAllResource()
+   在 Jufine.Backend.Security.Authentication.User..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Jufine.Backend.Security.Authentication.User..ctor()
+   在 Jufine.Backend.Security.Authentication.UserFactory.CreateUser()
+   在 Jufine.Backend.WebModel.PageBase.OnPreInit(EventArgs e) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Jufine.Backend.WebModel\PageBase.cs:行号 59
+   在 System.Web.UI.Page.PerformPreInit()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</detail>
+  </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-1-130399579835790385" machine="PC-20140110DKZC" module="BackendUI" logType="Error" logTime="2014/3/22 18:33:23">
+    <title>【PC-20140110DKZC】“Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。</title>
+    <detail>System.TypeInitializationException: “Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。 ---&gt; System.Data.SqlClient.SqlException: 在文件 'G:\SqlServerData\Security.mdf' 中、偏移量为 0x00000000188000 的位置执行 读取 期间，操作系统已经向 SQL Server 返回了错误 21(设备未就绪。)。SQL Server 错误日志和系统事件日志中的其他消息可能提供了更详细信息。这是一个威胁数据库完整性的严重系统级错误条件，必须立即纠正。请执行完整的数据库一致性检查(DBCC CHECKDB)。此错误可以由许多因素导致；有关详细信息，请参阅 SQL Server 联机丛书。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 541
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 460
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 435
+   在 Jufine.Backend.Security.Authentication.User.GetAllResource()
+   在 Jufine.Backend.Security.Authentication.User..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Jufine.Backend.Security.Authentication.User..ctor()
+   在 Jufine.Backend.Security.Authentication.UserFactory.CreateUser()
+   在 Jufine.Backend.WebModel.PageBase.OnPreInit(EventArgs e) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Jufine.Backend.WebModel\PageBase.cs:行号 59
+   在 System.Web.UI.Page.PerformPreInit()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</detail>
+  </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-1-130399579835790385" machine="PC-20140110DKZC" module="BackendUI" logType="Error" logTime="2014/3/22 18:33:39">
+    <title>【PC-20140110DKZC】“Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。</title>
+    <detail>System.TypeInitializationException: “Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。 ---&gt; System.Data.SqlClient.SqlException: 在文件 'G:\SqlServerData\Security.mdf' 中、偏移量为 0x00000000188000 的位置执行 读取 期间，操作系统已经向 SQL Server 返回了错误 21(设备未就绪。)。SQL Server 错误日志和系统事件日志中的其他消息可能提供了更详细信息。这是一个威胁数据库完整性的严重系统级错误条件，必须立即纠正。请执行完整的数据库一致性检查(DBCC CHECKDB)。此错误可以由许多因素导致；有关详细信息，请参阅 SQL Server 联机丛书。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 541
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 460
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 435
+   在 Jufine.Backend.Security.Authentication.User.GetAllResource()
+   在 Jufine.Backend.Security.Authentication.User..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Jufine.Backend.Security.Authentication.User..ctor()
+   在 Jufine.Backend.Security.Authentication.UserFactory.CreateUser()
+   在 Jufine.Backend.WebModel.PageBase.OnPreInit(EventArgs e) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Jufine.Backend.WebModel\PageBase.cs:行号 59
+   在 System.Web.UI.Page.PerformPreInit()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</detail>
+  </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-1-130399579835790385" machine="PC-20140110DKZC" module="BackendUI" logType="Error" logTime="2014/3/22 18:33:44">
+    <title>【PC-20140110DKZC】“Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。</title>
+    <detail>System.TypeInitializationException: “Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。 ---&gt; System.Data.SqlClient.SqlException: 在文件 'G:\SqlServerData\Security.mdf' 中、偏移量为 0x00000000188000 的位置执行 读取 期间，操作系统已经向 SQL Server 返回了错误 21(设备未就绪。)。SQL Server 错误日志和系统事件日志中的其他消息可能提供了更详细信息。这是一个威胁数据库完整性的严重系统级错误条件，必须立即纠正。请执行完整的数据库一致性检查(DBCC CHECKDB)。此错误可以由许多因素导致；有关详细信息，请参阅 SQL Server 联机丛书。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 541
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 460
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 435
+   在 Jufine.Backend.Security.Authentication.User.GetAllResource()
+   在 Jufine.Backend.Security.Authentication.User..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Jufine.Backend.Security.Authentication.User..ctor()
+   在 Jufine.Backend.Security.Authentication.UserFactory.CreateUser()
+   在 Jufine.Backend.WebModel.PageBase.OnPreInit(EventArgs e) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Jufine.Backend.WebModel\PageBase.cs:行号 59
+   在 System.Web.UI.Page.PerformPreInit()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</detail>
+  </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-1-130399579835790385" machine="PC-20140110DKZC" module="BackendUI" logType="Error" logTime="2014/3/22 18:33:44">
+    <title>【PC-20140110DKZC】“Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。</title>
+    <detail>System.TypeInitializationException: “Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。 ---&gt; System.Data.SqlClient.SqlException: 在文件 'G:\SqlServerData\Security.mdf' 中、偏移量为 0x00000000188000 的位置执行 读取 期间，操作系统已经向 SQL Server 返回了错误 21(设备未就绪。)。SQL Server 错误日志和系统事件日志中的其他消息可能提供了更详细信息。这是一个威胁数据库完整性的严重系统级错误条件，必须立即纠正。请执行完整的数据库一致性检查(DBCC CHECKDB)。此错误可以由许多因素导致；有关详细信息，请参阅 SQL Server 联机丛书。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 541
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 460
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 435
+   在 Jufine.Backend.Security.Authentication.User.GetAllResource()
+   在 Jufine.Backend.Security.Authentication.User..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Jufine.Backend.Security.Authentication.User..ctor()
+   在 Jufine.Backend.Security.Authentication.UserFactory.CreateUser()
+   在 Jufine.Backend.WebModel.PageBase.OnPreInit(EventArgs e) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Jufine.Backend.WebModel\PageBase.cs:行号 59
+   在 System.Web.UI.Page.PerformPreInit()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</detail>
+  </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-1-130399579835790385" machine="PC-20140110DKZC" module="BackendUI" logType="Error" logTime="2014/3/22 18:34:31">
+    <title>【PC-20140110DKZC】“Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。</title>
+    <detail>System.TypeInitializationException: “Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。 ---&gt; System.Data.SqlClient.SqlException: 在文件 'G:\SqlServerData\Security.mdf' 中、偏移量为 0x00000000188000 的位置执行 读取 期间，操作系统已经向 SQL Server 返回了错误 21(设备未就绪。)。SQL Server 错误日志和系统事件日志中的其他消息可能提供了更详细信息。这是一个威胁数据库完整性的严重系统级错误条件，必须立即纠正。请执行完整的数据库一致性检查(DBCC CHECKDB)。此错误可以由许多因素导致；有关详细信息，请参阅 SQL Server 联机丛书。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 541
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 460
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 435
+   在 Jufine.Backend.Security.Authentication.User.GetAllResource()
+   在 Jufine.Backend.Security.Authentication.User..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Jufine.Backend.Security.Authentication.User..ctor()
+   在 Jufine.Backend.Security.Authentication.UserFactory.CreateUser()
+   在 Jufine.Backend.WebModel.PageBase.OnPreInit(EventArgs e) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Jufine.Backend.WebModel\PageBase.cs:行号 59
+   在 System.Web.UI.Page.PerformPreInit()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</detail>
+  </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-1-130399579835790385" machine="PC-20140110DKZC" module="BackendUI" logType="Error" logTime="2014/3/22 18:34:48">
+    <title>【PC-20140110DKZC】“Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。</title>
+    <detail>System.TypeInitializationException: “Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。 ---&gt; System.Data.SqlClient.SqlException: 在文件 'G:\SqlServerData\Security.mdf' 中、偏移量为 0x00000000188000 的位置执行 读取 期间，操作系统已经向 SQL Server 返回了错误 21(设备未就绪。)。SQL Server 错误日志和系统事件日志中的其他消息可能提供了更详细信息。这是一个威胁数据库完整性的严重系统级错误条件，必须立即纠正。请执行完整的数据库一致性检查(DBCC CHECKDB)。此错误可以由许多因素导致；有关详细信息，请参阅 SQL Server 联机丛书。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 541
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 460
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 435
+   在 Jufine.Backend.Security.Authentication.User.GetAllResource()
+   在 Jufine.Backend.Security.Authentication.User..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Jufine.Backend.Security.Authentication.User..ctor()
+   在 Jufine.Backend.Security.Authentication.UserFactory.CreateUser()
+   在 Jufine.Backend.WebModel.PageBase.OnPreInit(EventArgs e) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Jufine.Backend.WebModel\PageBase.cs:行号 59
+   在 System.Web.UI.Page.PerformPreInit()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</detail>
+  </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-1-130399579835790385" machine="PC-20140110DKZC" module="BackendUI" logType="Error" logTime="2014/3/22 18:34:56">
+    <title>【PC-20140110DKZC】“Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。</title>
+    <detail>System.TypeInitializationException: “Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。 ---&gt; System.Data.SqlClient.SqlException: 在文件 'G:\SqlServerData\Security.mdf' 中、偏移量为 0x00000000188000 的位置执行 读取 期间，操作系统已经向 SQL Server 返回了错误 21(设备未就绪。)。SQL Server 错误日志和系统事件日志中的其他消息可能提供了更详细信息。这是一个威胁数据库完整性的严重系统级错误条件，必须立即纠正。请执行完整的数据库一致性检查(DBCC CHECKDB)。此错误可以由许多因素导致；有关详细信息，请参阅 SQL Server 联机丛书。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 541
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 460
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 435
+   在 Jufine.Backend.Security.Authentication.User.GetAllResource()
+   在 Jufine.Backend.Security.Authentication.User..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Jufine.Backend.Security.Authentication.User..ctor()
+   在 Jufine.Backend.Security.Authentication.UserFactory.CreateUser()
+   在 Jufine.Backend.WebModel.PageBase.OnPreInit(EventArgs e) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Jufine.Backend.WebModel\PageBase.cs:行号 59
+   在 System.Web.UI.Page.PerformPreInit()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</detail>
+  </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-1-130399579835790385" machine="PC-20140110DKZC" module="BackendUI" logType="Error" logTime="2014/3/22 18:34:57">
+    <title>【PC-20140110DKZC】“Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。</title>
+    <detail>System.TypeInitializationException: “Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。 ---&gt; System.Data.SqlClient.SqlException: 在文件 'G:\SqlServerData\Security.mdf' 中、偏移量为 0x00000000188000 的位置执行 读取 期间，操作系统已经向 SQL Server 返回了错误 21(设备未就绪。)。SQL Server 错误日志和系统事件日志中的其他消息可能提供了更详细信息。这是一个威胁数据库完整性的严重系统级错误条件，必须立即纠正。请执行完整的数据库一致性检查(DBCC CHECKDB)。此错误可以由许多因素导致；有关详细信息，请参阅 SQL Server 联机丛书。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 541
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 460
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 435
+   在 Jufine.Backend.Security.Authentication.User.GetAllResource()
+   在 Jufine.Backend.Security.Authentication.User..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Jufine.Backend.Security.Authentication.User..ctor()
+   在 Jufine.Backend.Security.Authentication.UserFactory.CreateUser()
+   在 Jufine.Backend.WebModel.PageBase.OnPreInit(EventArgs e) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Jufine.Backend.WebModel\PageBase.cs:行号 59
+   在 System.Web.UI.Page.PerformPreInit()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</detail>
+  </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-1-130399579835790385" machine="PC-20140110DKZC" module="BackendUI" logType="Error" logTime="2014/3/22 18:35:11">
+    <title>【PC-20140110DKZC】“Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。</title>
+    <detail>System.TypeInitializationException: “Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。 ---&gt; System.Data.SqlClient.SqlException: 在文件 'G:\SqlServerData\Security.mdf' 中、偏移量为 0x00000000188000 的位置执行 读取 期间，操作系统已经向 SQL Server 返回了错误 21(设备未就绪。)。SQL Server 错误日志和系统事件日志中的其他消息可能提供了更详细信息。这是一个威胁数据库完整性的严重系统级错误条件，必须立即纠正。请执行完整的数据库一致性检查(DBCC CHECKDB)。此错误可以由许多因素导致；有关详细信息，请参阅 SQL Server 联机丛书。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 541
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 460
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 435
+   在 Jufine.Backend.Security.Authentication.User.GetAllResource()
+   在 Jufine.Backend.Security.Authentication.User..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Jufine.Backend.Security.Authentication.User..ctor()
+   在 Jufine.Backend.Security.Authentication.UserFactory.CreateUser()
+   在 Jufine.Backend.WebModel.PageBase.OnPreInit(EventArgs e) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Jufine.Backend.WebModel\PageBase.cs:行号 59
+   在 System.Web.UI.Page.PerformPreInit()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</detail>
+  </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-1-130399579835790385" machine="PC-20140110DKZC" module="BackendUI" logType="Error" logTime="2014/3/22 18:35:12">
+    <title>【PC-20140110DKZC】“Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。</title>
+    <detail>System.TypeInitializationException: “Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。 ---&gt; System.Data.SqlClient.SqlException: 在文件 'G:\SqlServerData\Security.mdf' 中、偏移量为 0x00000000188000 的位置执行 读取 期间，操作系统已经向 SQL Server 返回了错误 21(设备未就绪。)。SQL Server 错误日志和系统事件日志中的其他消息可能提供了更详细信息。这是一个威胁数据库完整性的严重系统级错误条件，必须立即纠正。请执行完整的数据库一致性检查(DBCC CHECKDB)。此错误可以由许多因素导致；有关详细信息，请参阅 SQL Server 联机丛书。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 541
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 460
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 435
+   在 Jufine.Backend.Security.Authentication.User.GetAllResource()
+   在 Jufine.Backend.Security.Authentication.User..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Jufine.Backend.Security.Authentication.User..ctor()
+   在 Jufine.Backend.Security.Authentication.UserFactory.CreateUser()
+   在 Jufine.Backend.WebModel.PageBase.OnPreInit(EventArgs e) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Jufine.Backend.WebModel\PageBase.cs:行号 59
+   在 System.Web.UI.Page.PerformPreInit()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</detail>
+  </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-1-130399579835790385" machine="PC-20140110DKZC" module="BackendUI" logType="Error" logTime="2014/3/22 18:35:36">
+    <title>【PC-20140110DKZC】“Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。</title>
+    <detail>System.TypeInitializationException: “Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。 ---&gt; System.Data.SqlClient.SqlException: 在文件 'G:\SqlServerData\Security.mdf' 中、偏移量为 0x00000000188000 的位置执行 读取 期间，操作系统已经向 SQL Server 返回了错误 21(设备未就绪。)。SQL Server 错误日志和系统事件日志中的其他消息可能提供了更详细信息。这是一个威胁数据库完整性的严重系统级错误条件，必须立即纠正。请执行完整的数据库一致性检查(DBCC CHECKDB)。此错误可以由许多因素导致；有关详细信息，请参阅 SQL Server 联机丛书。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 541
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 460
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 435
+   在 Jufine.Backend.Security.Authentication.User.GetAllResource()
+   在 Jufine.Backend.Security.Authentication.User..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Jufine.Backend.Security.Authentication.User..ctor()
+   在 Jufine.Backend.Security.Authentication.UserFactory.CreateUser()
+   在 Jufine.Backend.WebModel.PageBase.OnPreInit(EventArgs e) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Jufine.Backend.WebModel\PageBase.cs:行号 59
+   在 System.Web.UI.Page.PerformPreInit()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</detail>
+  </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-1-130399579835790385" machine="PC-20140110DKZC" module="BackendUI" logType="Error" logTime="2014/3/22 18:36:21">
+    <title>【PC-20140110DKZC】“Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。</title>
+    <detail>System.TypeInitializationException: “Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。 ---&gt; System.Data.SqlClient.SqlException: 在文件 'G:\SqlServerData\Security.mdf' 中、偏移量为 0x00000000188000 的位置执行 读取 期间，操作系统已经向 SQL Server 返回了错误 21(设备未就绪。)。SQL Server 错误日志和系统事件日志中的其他消息可能提供了更详细信息。这是一个威胁数据库完整性的严重系统级错误条件，必须立即纠正。请执行完整的数据库一致性检查(DBCC CHECKDB)。此错误可以由许多因素导致；有关详细信息，请参阅 SQL Server 联机丛书。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 541
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 460
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 435
+   在 Jufine.Backend.Security.Authentication.User.GetAllResource()
+   在 Jufine.Backend.Security.Authentication.User..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Jufine.Backend.Security.Authentication.User..ctor()
+   在 Jufine.Backend.Security.Authentication.UserFactory.CreateUser()
+   在 Jufine.Backend.WebModel.PageBase.OnPreInit(EventArgs e) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Jufine.Backend.WebModel\PageBase.cs:行号 59
+   在 System.Web.UI.Page.PerformPreInit()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</detail>
+  </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-1-130399579835790385" machine="PC-20140110DKZC" module="BackendUI" logType="Error" logTime="2014/3/22 18:36:50">
+    <title>【PC-20140110DKZC】“Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。</title>
+    <detail>System.TypeInitializationException: “Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。 ---&gt; System.Data.SqlClient.SqlException: 在文件 'G:\SqlServerData\Security.mdf' 中、偏移量为 0x00000000188000 的位置执行 读取 期间，操作系统已经向 SQL Server 返回了错误 21(设备未就绪。)。SQL Server 错误日志和系统事件日志中的其他消息可能提供了更详细信息。这是一个威胁数据库完整性的严重系统级错误条件，必须立即纠正。请执行完整的数据库一致性检查(DBCC CHECKDB)。此错误可以由许多因素导致；有关详细信息，请参阅 SQL Server 联机丛书。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 541
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 460
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 435
+   在 Jufine.Backend.Security.Authentication.User.GetAllResource()
+   在 Jufine.Backend.Security.Authentication.User..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Jufine.Backend.Security.Authentication.User..ctor()
+   在 Jufine.Backend.Security.Authentication.UserFactory.CreateUser()
+   在 Jufine.Backend.WebModel.PageBase.OnPreInit(EventArgs e) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Jufine.Backend.WebModel\PageBase.cs:行号 59
+   在 System.Web.UI.Page.PerformPreInit()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</detail>
+  </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-1-130399694892411247" machine="PC-20140110DKZC" module="BackendUI" logType="Error" logTime="2014/3/22 21:44:51">
+    <title>【PC-20140110DKZC】“Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。</title>
+    <detail>System.TypeInitializationException: “Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。 ---&gt; System.Data.SqlClient.SqlException: 在文件 'G:\SqlServerData\Security.mdf' 中、偏移量为 0x0000000012c000 的位置执行 读取 期间，操作系统已经向 SQL Server 返回了错误 21(设备未就绪。)。SQL Server 错误日志和系统事件日志中的其他消息可能提供了更详细信息。这是一个威胁数据库完整性的严重系统级错误条件，必须立即纠正。请执行完整的数据库一致性检查(DBCC CHECKDB)。此错误可以由许多因素导致；有关详细信息，请参阅 SQL Server 联机丛书。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 541
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 460
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 435
+   在 Jufine.Backend.Security.Authentication.User.GetAllResource()
+   在 Jufine.Backend.Security.Authentication.User..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Jufine.Backend.Security.Authentication.User..ctor()
+   在 Jufine.Backend.Security.Authentication.UserFactory.CreateUser()
+   在 Jufine.Backend.WebModel.PageBase.OnPreInit(EventArgs e) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Jufine.Backend.WebModel\PageBase.cs:行号 59
+   在 System.Web.UI.Page.PerformPreInit()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</detail>
+  </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-1-130399694892411247" machine="PC-20140110DKZC" module="BackendUI" logType="Error" logTime="2014/3/22 21:45:39">
+    <title>【PC-20140110DKZC】“Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。</title>
+    <detail>System.TypeInitializationException: “Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。 ---&gt; System.Data.SqlClient.SqlException: 在文件 'G:\SqlServerData\Security.mdf' 中、偏移量为 0x0000000012c000 的位置执行 读取 期间，操作系统已经向 SQL Server 返回了错误 21(设备未就绪。)。SQL Server 错误日志和系统事件日志中的其他消息可能提供了更详细信息。这是一个威胁数据库完整性的严重系统级错误条件，必须立即纠正。请执行完整的数据库一致性检查(DBCC CHECKDB)。此错误可以由许多因素导致；有关详细信息，请参阅 SQL Server 联机丛书。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 541
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 460
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 435
+   在 Jufine.Backend.Security.Authentication.User.GetAllResource()
+   在 Jufine.Backend.Security.Authentication.User..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Jufine.Backend.Security.Authentication.User..ctor()
+   在 Jufine.Backend.Security.Authentication.UserFactory.CreateUser()
+   在 Jufine.Backend.WebModel.PageBase.OnPreInit(EventArgs e) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Jufine.Backend.WebModel\PageBase.cs:行号 59
+   在 System.Web.UI.Page.PerformPreInit()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</detail>
+  </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-1-130400098195109622" machine="PC-20140110DKZC" module="BackendUI" logType="Error" logTime="2014/3/23 8:57:11">
+    <title>【PC-20140110DKZC】“Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。</title>
+    <detail>System.TypeInitializationException: “Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。 ---&gt; System.Data.SqlClient.SqlException: 无法打开登录所请求的数据库 "Security"。登录失败。
+用户 'NT AUTHORITY\SYSTEM' 登录失败。
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 457
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 435
+   在 Jufine.Backend.Security.Authentication.User.GetAllResource()
+   在 Jufine.Backend.Security.Authentication.User..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Jufine.Backend.Security.Authentication.User..ctor()
+   在 Jufine.Backend.Security.Authentication.UserFactory.CreateUser()
+   在 Jufine.Backend.WebModel.PageBase.OnPreInit(EventArgs e) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Jufine.Backend.WebModel\PageBase.cs:行号 59
+   在 System.Web.UI.Page.PerformPreInit()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</detail>
+  </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-1-130400098195109622" machine="PC-20140110DKZC" module="BackendUI" logType="Error" logTime="2014/3/23 8:57:37">
+    <title>【PC-20140110DKZC】“Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。</title>
+    <detail>System.TypeInitializationException: “Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。 ---&gt; System.Data.SqlClient.SqlException: 无法打开登录所请求的数据库 "Security"。登录失败。
+用户 'NT AUTHORITY\SYSTEM' 登录失败。
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 457
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 435
+   在 Jufine.Backend.Security.Authentication.User.GetAllResource()
+   在 Jufine.Backend.Security.Authentication.User..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Jufine.Backend.Security.Authentication.User..ctor()
+   在 Jufine.Backend.Security.Authentication.UserFactory.CreateUser()
+   在 Jufine.Backend.WebModel.PageBase.OnPreInit(EventArgs e) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Jufine.Backend.WebModel\PageBase.cs:行号 59
+   在 System.Web.UI.Page.PerformPreInit()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</detail>
+  </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-1-130400098195109622" machine="PC-20140110DKZC" module="BackendUI" logType="Error" logTime="2014/3/23 8:57:38">
+    <title>【PC-20140110DKZC】“Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。</title>
+    <detail>System.TypeInitializationException: “Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。 ---&gt; System.Data.SqlClient.SqlException: 无法打开登录所请求的数据库 "Security"。登录失败。
+用户 'NT AUTHORITY\SYSTEM' 登录失败。
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 457
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 435
+   在 Jufine.Backend.Security.Authentication.User.GetAllResource()
+   在 Jufine.Backend.Security.Authentication.User..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Jufine.Backend.Security.Authentication.User..ctor()
+   在 Jufine.Backend.Security.Authentication.UserFactory.CreateUser()
+   在 Jufine.Backend.WebModel.PageBase.OnPreInit(EventArgs e) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Jufine.Backend.WebModel\PageBase.cs:行号 59
+   在 System.Web.UI.Page.PerformPreInit()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</detail>
+  </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-1-130400098195109622" machine="PC-20140110DKZC" module="BackendUI" logType="Error" logTime="2014/3/23 8:57:49">
+    <title>【PC-20140110DKZC】“Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。</title>
+    <detail>System.TypeInitializationException: “Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。 ---&gt; System.Data.SqlClient.SqlException: 无法打开登录所请求的数据库 "Security"。登录失败。
+用户 'NT AUTHORITY\SYSTEM' 登录失败。
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 457
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 435
+   在 Jufine.Backend.Security.Authentication.User.GetAllResource()
+   在 Jufine.Backend.Security.Authentication.User..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Jufine.Backend.Security.Authentication.User..ctor()
+   在 Jufine.Backend.Security.Authentication.UserFactory.CreateUser()
+   在 Jufine.Backend.WebModel.PageBase.OnPreInit(EventArgs e) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Jufine.Backend.WebModel\PageBase.cs:行号 59
+   在 System.Web.UI.Page.PerformPreInit()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</detail>
+  </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-1-130400098195109622" machine="PC-20140110DKZC" module="BackendUI" logType="Error" logTime="2014/3/23 8:58:11">
+    <title>【PC-20140110DKZC】“Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。</title>
+    <detail>System.TypeInitializationException: “Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。 ---&gt; System.Data.SqlClient.SqlException: 无法打开登录所请求的数据库 "Security"。登录失败。
+用户 'NT AUTHORITY\SYSTEM' 登录失败。
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 457
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 435
+   在 Jufine.Backend.Security.Authentication.User.GetAllResource()
+   在 Jufine.Backend.Security.Authentication.User..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Jufine.Backend.Security.Authentication.User..ctor()
+   在 Jufine.Backend.Security.Authentication.UserFactory.CreateUser()
+   在 Jufine.Backend.WebModel.PageBase.OnPreInit(EventArgs e) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Jufine.Backend.WebModel\PageBase.cs:行号 59
+   在 System.Web.UI.Page.PerformPreInit()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</detail>
+  </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-1-130400098195109622" machine="PC-20140110DKZC" module="BackendUI" logType="Error" logTime="2014/3/23 8:58:19">
+    <title>【PC-20140110DKZC】“Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。</title>
+    <detail>System.TypeInitializationException: “Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。 ---&gt; System.Data.SqlClient.SqlException: 无法打开登录所请求的数据库 "Security"。登录失败。
+用户 'NT AUTHORITY\SYSTEM' 登录失败。
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 457
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 435
+   在 Jufine.Backend.Security.Authentication.User.GetAllResource()
+   在 Jufine.Backend.Security.Authentication.User..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Jufine.Backend.Security.Authentication.User..ctor()
+   在 Jufine.Backend.Security.Authentication.UserFactory.CreateUser()
+   在 Jufine.Backend.WebModel.PageBase.OnPreInit(EventArgs e) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Jufine.Backend.WebModel\PageBase.cs:行号 59
+   在 System.Web.UI.Page.PerformPreInit()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</detail>
+  </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-1-130400098195109622" machine="PC-20140110DKZC" module="BackendUI" logType="Error" logTime="2014/3/23 8:58:19">
+    <title>【PC-20140110DKZC】“Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。</title>
+    <detail>System.TypeInitializationException: “Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。 ---&gt; System.Data.SqlClient.SqlException: 无法打开登录所请求的数据库 "Security"。登录失败。
+用户 'NT AUTHORITY\SYSTEM' 登录失败。
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 457
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 435
+   在 Jufine.Backend.Security.Authentication.User.GetAllResource()
+   在 Jufine.Backend.Security.Authentication.User..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Jufine.Backend.Security.Authentication.User..ctor()
+   在 Jufine.Backend.Security.Authentication.UserFactory.CreateUser()
+   在 Jufine.Backend.WebModel.PageBase.OnPreInit(EventArgs e) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Jufine.Backend.WebModel\PageBase.cs:行号 59
+   在 System.Web.UI.Page.PerformPreInit()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</detail>
+  </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-1-130400098195109622" machine="PC-20140110DKZC" module="BackendUI" logType="Error" logTime="2014/3/23 8:58:20">
+    <title>【PC-20140110DKZC】“Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。</title>
+    <detail>System.TypeInitializationException: “Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。 ---&gt; System.Data.SqlClient.SqlException: 无法打开登录所请求的数据库 "Security"。登录失败。
+用户 'NT AUTHORITY\SYSTEM' 登录失败。
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 457
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 435
+   在 Jufine.Backend.Security.Authentication.User.GetAllResource()
+   在 Jufine.Backend.Security.Authentication.User..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Jufine.Backend.Security.Authentication.User..ctor()
+   在 Jufine.Backend.Security.Authentication.UserFactory.CreateUser()
+   在 Jufine.Backend.WebModel.PageBase.OnPreInit(EventArgs e) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Jufine.Backend.WebModel\PageBase.cs:行号 59
+   在 System.Web.UI.Page.PerformPreInit()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</detail>
+  </log>
+  <log application="/LM/W3SVC/1/ROOT/Accounting-1-130400098195109622" machine="PC-20140110DKZC" module="BackendUI" logType="Error" logTime="2014/3/23 9:03:06">
+    <title>【PC-20140110DKZC】“Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。</title>
+    <detail>System.TypeInitializationException: “Jufine.Backend.Security.Authentication.User”的类型初始值设定项引发异常。 ---&gt; System.Data.SqlClient.SqlException: 无法打开登录所请求的数据库 "Security"。登录失败。
+用户 'NT AUTHORITY\SYSTEM' 登录失败。
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 457
+   在 Com.BaseLibrary.Data.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\BaseLibrary\Com.BaseLibrary.Common\Data\SqlHelper.cs:行号 435
+   在 Jufine.Backend.Security.Authentication.User.GetAllResource()
+   在 Jufine.Backend.Security.Authentication.User..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Jufine.Backend.Security.Authentication.User..ctor()
+   在 Jufine.Backend.Security.Authentication.UserFactory.CreateUser()
+   在 Jufine.Backend.WebModel.PageBase.OnPreInit(EventArgs e) 位置 e:\MyPrjsInGitHub\BackendPrjsInGitHub\Jufine.Backend.WebModel\PageBase.cs:行号 59
+   在 System.Web.UI.Page.PerformPreInit()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</detail>
+  </log>
 </logs>
